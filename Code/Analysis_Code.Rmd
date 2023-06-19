@@ -1,0 +1,757 @@
+---
+title: "Analisi - FINAL"
+subtitle: "Full statistical analysis and plots"
+author: "Mathilde Josserand [mathilde.josserand@gmail.fr], Elena Eccher [elena.eccher-1@unitn.it]"
+date: "`r date()`"
+output:
+  html_document:
+    highlight: textmate
+    theme: journal
+    toc: yes
+    toc_depth: 6
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '6'
+  word_document: default
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE,                   # default code chunk options
+                      fig.width=11, fig.height=6, fig.align="center", comment=NA, # default figure dimensions
+                      fig.path="./Figures/",  dev=c("png", "svg"),                                  # save images to ./figures/
+                      dpi=300)
+                      #dev="jpeg")                                        # please set dpi=300 and comment out dev="jpeg" for high resolution but very big images
+                     # cache=TRUE, autodep=TRUE);                                  # cache chunks
+
+```
+
+```{r , echo=F, message=F, warning=FALSE}
+
+library(knitr) # for opts_knitr and having captions to figures
+library(readr) # for data import
+library(tidyr) # for data processing
+library(dplyr) # for data processing
+library(tibble) # for data processing
+library(reshape2) # for data processing
+library(tidyverse) # for data processing
+library(ggplot2) # for plotting
+library(gghalves) # for plotting
+library(rstatix) # for basic statistical test
+library(gridExtra) # a few others functions for plotting
+library(dgof) #for ks.test
+library(wesanderson) # color palette
+library(lemon) # for plotting options
+library(ggh4x) # for plotting options
+library(ggpubr) # for plotting options
+library(bibtex) # for bibliography output
+
+
+# function to count length of a vector without NA
+length2 <- function (x, na.rm=FALSE) {
+    if (na.rm) sum(!is.na(x))
+    else       length(x)
+}
+
+# function to compute standard error
+se <- function(x) sd(x, na.rm = TRUE)/sqrt(length2(x))
+
+
+# Figure and Table caption adapted from https://stackoverflow.com/questions/37116632/rmarkdown-html-number-figures: 
+outputFormat = opts_knit$get("rmarkdown.pandoc.to"); # determine the output format of the document
+if( is.null(outputFormat) ) outputFormat = ""; # probably not run within knittr
+capTabNo = 1; capFigNo = 1; # figure and table caption numbering, for HTML do it manually
+#Function to add the Table Number
+capTab = function(x)
+{
+  if(outputFormat == 'html'){
+    x = paste0("**Table ",capTabNo,".** ",x,"")
+    capTabNo <<- capTabNo + 1
+  }; x
+}
+#Function to add the Figure Number
+capFig = function(x, show_R_version=TRUE, show_package_versions=NULL, is_map=FALSE)
+{
+  if(outputFormat == 'html')
+  {
+    x <- paste0("**Figure ",capFigNo,".** ",x,"");
+    if( show_R_version || (!is.null(show_package_versions) && length(show_package_versions) > 0) )
+    {
+      x <- paste0(x, " Figure generated using ");
+      if( show_R_version ) x <- paste0(x, stringr::str_replace(R.version.string, stringr::fixed("R "), "[`R`](https://www.r-project.org/) "));
+      if( !is.null(show_package_versions) && length(show_package_versions) > 0 )
+      {
+        x <- paste0(x, ifelse( show_R_version, " and ", " "));
+        x <- paste0(x, ifelse( length(show_package_versions) > 1, "packages ", "package "));
+        x <- paste0(x, paste0(vapply(show_package_versions, function(x) paste0("`",x,"`", " (version ", packageVersion(x),")"), character(1)), collapse=", "), ".");
+      }
+      if( is_map ) x <- paste0(x, " Maps are using public domain data from the [Natural Earth project](https://www.naturalearthdata.com/) as provided by the `R` package `maps`.");
+    }
+    capFigNo <<- capFigNo + 1;
+  }; 
+  x;
+}
+
+
+```
+
+
+
+```{r Load Data}
+Numerosity_Comparison_Task <- read_csv("./Numerosity_Comparison_Task.csv")
+
+Ordering_Cards_Task <- read_csv("./Ordering_Cards_Task.csv")
+
+Correlation_Score_Cards_Task <- read_delim("./Correlation_Score_Cards_Task.csv")
+
+load("./Permutation_Distr.Rdata")
+
+```
+
+# Cards
+Results and Plots for Ordering Cards Task
+
+## Ordering Tasks
+
+Here qualitative analysis of spatial arrangements chosen by participants
+```{r}
+
+Ordering_Cards_Task$exp  = factor(Ordering_Cards_Task$exp, levels = c("Himba Adults 2021", "Himba Adults 2022", "Italian Adults", "Italian Preschoolers"))
+
+# Group responses in more general categories
+Ordering_Cards_Task %>%
+mutate(
+  shape = case_when(shape == "Diagonal" ~ "Other Linear", 
+                    shape == "V Line" ~ "Other Linear",
+                    shape == "Grid" ~ "Non Linear", 
+                    shape == "Circle" ~ "Non Linear",
+                    shape == "Curve" ~ "Non Linear",
+                    shape == "L-shaped" ~ "Non Linear",
+                    shape == "Two groups" ~ "No-shape",
+                    shape == "Random" ~ "No-shape", 
+            T ~ shape)) -> Ordering_Cards_Task_new_groups
+
+
+# Calculate percentage of arrangement for each group
+Ordering_Cards_Task_new_grouped_narrowed = Ordering_Cards_Task_new_groups %>%
+  group_by(exp, shape)%>%
+    summarise(sum_total = sum(total_count),
+      percent_total = sum(Percent)*100)
+
+knitr::kable(Ordering_Cards_Task_new_grouped_narrowed, caption = "Percent of disposition_narrowed")
+
+
+# Plot Cards arrangements
+Cards_arrangements = ggplot(Ordering_Cards_Task_new_grouped_narrowed ,aes (x=shape, y = percent_total, fill = shape))+
+  geom_bar(position = position_dodge2(width = 0.9, preserve = "single"), stat = "identity", color ="black", size=.5)+
+  labs(title = "Experiment 1 - Spatial arrangements", x = "Shape", y = " % Subjects")+
+  facet_rep_grid(.~ exp, repeat.tick.labels = T)+
+  scale_y_continuous(breaks = seq(0, 100, by= 10))+
+ scale_fill_manual(values = c("#662506","#B30000", "#EF6548", "#FED976"), name= "Shape")+
+  coord_cartesian(ylim = c(0,100))+
+   theme_classic()+
+   theme(panel.grid.major.x = element_blank(), 
+        panel.grid.major.y = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         aspect.ratio = 1 , 
+         axis.title.y = element_text(size = 10),
+         axis.text.y = element_text(size = 10),
+         axis.text.x = element_blank(),
+         legend.position = "right",
+         plot.title = element_text(size = 14, face = "bold"))
+
+Cards_arrangements
+
+
+
+```
+
+
+## Distributions of r per population
+
+Here statistical analysis and plots for mapping disposition
+
+```{r}
+
+# Calculate percentage of Distributions Scores in each groups to better visualize distribution later
+correlation_coefficients_percent =  Correlation_Score_Cards_Task%>%
+  group_by(exp, cor)%>%
+  summarise(total_count = n()) %>%
+  group_by(exp)%>%
+  mutate(Percent = prop.table(total_count))
+
+ 
+
+correlation_coefficients_percent$exp = factor(correlation_coefficients_percent$exp,levels = c("Italian Adults", "Himba Adults 2021", "Himba Adults 2022", "Iatalian Preschoolers"))
+```
+
+Here me compute and measure the chance distribution to compare our real distributions with
+```{r message=FALSE, warning=FALSE}
+# Define edges for histogram bins
+dr <- diff(unique(r))
+edges_r <- seq(-1 - dr[1]/2, 1 + dr[1]/2, dr[1])
+
+# Compute histogram counts and probabilities
+nr_chance <- hist(r, breaks = edges_r, plot = FALSE)$counts
+pr <- nr_chance / sum(nr_chance)
+
+# Create a data frame for plotting
+df <- data.frame(rho = edges_r[-1], prob = pr, Distribution = "Chance")
+
+# Plot the distribution
+permut_distr = ggplot(df, aes(x = rho, y = prob)) + 
+  geom_bar(stat = "identity") + 
+  labs(x = "Kendall's tau", y = "Probability") + 
+  theme_classic()+
+  labs(title = "Distributions for permutations")
+
+permut_distr
+```
+
+
+```{r message=FALSE, warning=FALSE}
+# Here we define the values to better visualize distribution for each group later
+
+nr_adults <- hist(Correlation_Score_Cards_Task[Correlation_Score_Cards_Task$exp == "Italian Adults",]$cor, breaks = edges_r, plot = FALSE)$counts
+pr_adults <- nr_adults / sum(nr_adults)
+
+nr_Himba2021 <- hist(Correlation_Score_Cards_Task[Correlation_Score_Cards_Task$exp == "Himba Adults 2021",]$cor, breaks = edges_r, plot = FALSE)$counts
+pr_Himba2021 <- nr_Himba2021 / sum(nr_Himba2021)
+
+nr_Himba2022 <- hist(Correlation_Score_Cards_Task[Correlation_Score_Cards_Task$exp == "Himba Adults 2022",]$cor, breaks = edges_r, plot = FALSE)$counts
+pr_Himba2022 <- nr_Himba2022 / sum(nr_Himba2022)
+
+nr_pres <- hist(Correlation_Score_Cards_Task[Correlation_Score_Cards_Task$exp == "Italian Preschoolers",]$cor, breaks = edges_r, plot = FALSE)$counts
+pr_pres <- nr_pres / sum(nr_pres)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+# Create a data frame for plotting
+df_adults <- data.frame(rho = edges_r[-1], prob = pr_adults,  nr = nr_adults ,exp = "Italian Adults",  Distribution = "Real")
+df_Himba2021 <- data.frame(rho = edges_r[-1], prob = pr_Himba2021, nr = nr_Himba2021, exp = "Himba Adults 2021",  Distribution = "Real")
+df_Himba2022 <- data.frame(rho = edges_r[-1], prob = pr_Himba2022, nr = nr_Himba2022, exp = "Himba Adults 2022", Distribution = "Real")
+df_pres <- data.frame(rho = edges_r[-1], prob = pr_pres, nr = nr_pres, exp = "Italian Preschoolers", Distribution = "Real")
+
+df_all = rbind(df_adults, df_Himba2021, df_Himba2022, df_pres)
+```
+
+Here we test each real distribution of data versus the chance distribution, Two-sample Kolmogorov-Smirnov goodness-of-fit hypothesis test:
+
+```{r message=FALSE, warning=FALSE}
+# Two-sample Kolmogorov-Smirnov test for each group versus chance distribution
+fit_test_adults = ks.test(nr_chance, nr_adults, exact = T)
+fit_test_Himba2021 = ks.test(nr_chance, nr_Himba2021, exact = T)
+fit_test_Himba2022 =  ks.test(nr_chance, nr_Himba2022, exact = T)
+fit_test_Preschooler =  ks.test(nr_chance, nr_pres, exact = T)
+
+#combine results to better visualization
+fit_test_ks = rbind(fit_test_adults,fit_test_Himba2021, fit_test_Himba2022, fit_test_Preschooler)
+
+knitr::kable(fit_test_ks, caption = "Two-sample Kolmogorov-Smirnov goodness-of-fit hypothesis test")
+```
+
+
+Here we test the mean of each distributions versus the chance level (Wilcoxon test, mu = 0): 
+```{r message=FALSE, warning=FALSE}
+
+# Wilcoxon test against chance level, mu = 0 for each populations
+stat.test <- Correlation_Score_Cards_Task %>% 
+  group_by(exp) %>%
+  wilcox_test(cor ~ 1, mu = 0) %>%
+  add_significance()  %>%
+  add_xy_position(fun = "mean_se", x = 1)
+
+stat.test$p = round(stat.test$p, 3)
+knitr::kable(stat.test, caption = "Wilcoxon test against chance level, mu = 0")
+
+
+```
+
+Quick plot visualization 
+```{r message=FALSE, warning=FALSE}
+# Calculate Mean and SEM for each distribution
+tab_distr = Correlation_Score_Cards_Task %>%
+  group_by(exp) %>%
+  summarise(mean_cor= mean(cor),
+            se_cor = se(cor), 
+            count = n())
+
+
+# Re order factor level for better visualization
+ Correlation_Score_Cards_Task$exp = factor(Correlation_Score_Cards_Task$exp, levels = c("Italian Adults", "Himba Adults 2021", "Himba Adults 2022", "Italian Preschoolers"))
+df_all$exp =factor(df_all$exp, levels = c("Italian Adults", "Himba Adults 2021", "Himba Adults 2022", "Italian Preschoolers"))
+tab_distr$exp =factor(tab_distr$exp, levels = c("Italian Adults", "Himba Adults 2021", "Himba Adults 2022", "Italian Preschoolers"))
+stat.test$exp =factor(stat.test$exp, levels = c("Italian Adults", "Himba Adults 2021", "Himba Adults 2022", "Italian Preschoolers"))
+
+# Quick plot  of the distribution - Plot with the same scale
+plot = ggplot() + 
+  geom_bar(data = df, aes(x = rho, y = prob, fill= Distribution),alpha = .5,stat = "identity") + 
+  geom_bar(data = df_all, aes(x = rho, y = prob,  fill= Distribution),stat = "identity", alpha=.5) + 
+  scale_fill_manual(values = c("gray", "red"))+
+  facet_grid(. ~ exp )+
+  geom_point(data = tab_distr, aes(x = mean_cor, y = 1.1), size = 3, show.legend = F)+
+ geom_errorbarh(data = tab_distr, aes(xmin = mean_cor-se_cor, xmax =mean_cor+se_cor, y =1.1, height = .05),linewidth =  1, )+
+ geom_text(data = tab_distr, aes( x = mean_cor-.08, y= 1.25,label = paste0("n = ",count)))+
+geom_text(data = stat.test, aes(x = tab_distr$mean_cor-.08, y = 1.2,label = paste0("p_value = ",p)))+
+  theme_bw(base_size = 15)+
+   labs(x = "Kendall Tau coefficients", title = "Mapping distributions for Ordering cards task", subtitle = "p_value for Wilcoxon test against chance levele (mu = 0) are reported", y = "Probability")
+
+plot
+
+```
+
+
+```{r message=FALSE, warning=FALSE}
+# Here we plot each graph separately for prettier visualization
+# 
+p_adults <- ggplot() + 
+    geom_vline(xintercept = 0, color = "grey", linetype ="dashed", alpha = .7, size = 1)+
+  geom_bar(data = df, aes(x = rho, y = prob, fill = Distribution), alpha = .5, stat = "identity", show.legend = F) + 
+  geom_bar(data = df_all[df_all$exp == "Italian Adults",], aes(x = rho, y = prob,  fill = Distribution), stat = "identity", show.legend = F) + 
+  geom_point(data = tab_distr[tab_distr$exp == "Italian Adults",], aes(x = mean_cor, y = 1.075), size = 1.5, show.legend = F) +
+  geom_errorbarh(data = tab_distr[tab_distr$exp == "Italian Adults",], aes(xmin = mean_cor - se_cor, xmax = mean_cor + se_cor, y  =1.075), height = .03) +
+
+  coord_cartesian(xlim=c(-1.05,1.05))+
+  theme_classic()+
+   theme(panel.grid.major.y = element_blank(), 
+        panel.grid.major.x = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         aspect.ratio = 1 , 
+         axis.title.y = element_text(size = 10),
+         axis.text.y = element_text(size = 10),
+         legend.position = "bottom",
+         plot.title = element_text(size = 14, face = "bold"))+ 
+  scale_fill_manual(values = c("gray", "red"))+
+scale_y_continuous( breaks = seq(0, 1, by = 0.2))+
+  labs(y = "Probability", x ="Rightward                                                            Leftward")
+
+
+
+p_himba_2021 <- ggplot() +
+  geom_vline(xintercept = 0, color = "grey", linetype ="dashed", alpha = .7, size = 1)+
+  geom_bar(data = df, aes(x = rho, y = prob, fill = Distribution), alpha = .5, stat = "identity") + 
+  geom_bar(data = df_all[df_all$exp == "Himba Adults 2021",], aes(x = rho, y = prob,  fill = Distribution), stat = "identity") + 
+  geom_point(data = tab_distr[tab_distr$exp== "Himba Adults 2021",], aes(x = mean_cor, y =.395), size = 1.5, show.legend = F) +
+  geom_errorbarh(data = tab_distr[tab_distr$exp == "Himba Adults 2021",], aes(xmin = mean_cor - se_cor, xmax = mean_cor + se_cor, y  = .395), height = .015) +
+  coord_cartesian(xlim=c(-1.05,1.05), ylim=c(0,.4))+
+  theme_classic()+
+   theme(panel.grid.major.y = element_blank(), 
+        panel.grid.major.x = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         aspect.ratio = 1 , 
+         axis.title.y = element_text(size = 10),
+         axis.text.y = element_text(size = 10),
+         legend.position = "none",
+         plot.title = element_text(size = 14, face = "bold"))+ 
+  scale_fill_manual(values = c("gray", "red"))+
+  labs(y = "Probability", x ="Rightward                                                            Leftward")
+
+
+
+p_himba22 <- ggplot() + 
+    geom_vline(xintercept = 0, color = "grey", linetype ="dashed", alpha = .7, size = 1)+
+  geom_bar(data = df, aes(x = rho, y = prob, fill = Distribution), alpha = .5, stat = "identity") + 
+  geom_bar(data = df_all[df_all$exp == "Himba Adults 2022",], aes(x = rho, y = prob,  fill = Distribution), stat = "identity") + 
+  geom_point(data = tab_distr[tab_distr$exp  == "Himba Adults 2022",], aes(x = mean_cor, y =.395), size = 1.5, show.legend = F) +
+  geom_errorbarh(data = tab_distr[tab_distr$exp  == "Himba Adults 2022",], aes(xmin = mean_cor - se_cor, xmax = mean_cor + se_cor, y  = .395), height = .015) +
+  coord_cartesian(xlim=c(-1.05,1.05), ylim=c(0,.4))+
+  theme_classic()+
+   theme(panel.grid.major.y = element_blank(), 
+        panel.grid.major.x = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         aspect.ratio = 1 , 
+         axis.title.y = element_text(size = 10),
+         axis.text.y = element_text(size = 10),
+         legend.position = "none",
+         plot.title = element_text(size = 14, face = "bold"))+
+  scale_fill_manual(values = c("gray", "red"))+
+  labs(y = "Probability", x ="Rightward                                                            Leftward")
+
+
+
+p_pres <- ggplot() + 
+  geom_vline(xintercept = 0, color = "grey", linetype ="dashed", alpha = .7, size = 1)+
+  geom_bar(data = df, aes(x = rho, y = prob, fill = Distribution), alpha = .5, stat = "identity") + 
+  geom_bar(data = df_all[df_all$exp  == "Italian Preschoolers",], aes(x = rho, y = prob,  fill = Distribution), stat = "identity") + 
+  geom_point(data = tab_distr[tab_distr$exp == "Italian Preschoolers",], aes(x = mean_cor, y =.395), size = 1.5, show.legend = F) +
+  geom_errorbarh(data = tab_distr[tab_distr$exp == "Italian Preschoolers",], aes(xmin = mean_cor - se_cor, xmax = mean_cor + se_cor, y  = .395), height = .015) +
+  coord_cartesian(xlim=c(-1.05,1.05), ylim=c(0,.4))+
+  theme_classic()+
+   theme(panel.grid.major.y = element_blank(), 
+        panel.grid.major.x = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         aspect.ratio = 1 , 
+         axis.title.y = element_text(size = 10),
+         axis.text.y = element_text(size = 10),
+         legend.position = "none",
+         plot.title = element_text(size = 14, face = "bold"))+
+  scale_fill_manual(values = c("gray", "red"))+
+  labs(y = "Probability", x ="Rightward                                                            Leftward")
+
+```
+
+Here graph plotted with adjusted scales for better visualization
+```{r message=FALSE, warning=FALSE}
+# Combine single plots in one
+plot_all = ggarrange(p_adults, p_himba_2021, p_himba22,p_pres, ncol = 4)
+
+plot_all
+```
+
+
+### Analysis - Kruskal–Wallis test
+
+Here Kruskal–Wallis test for difference between population on mapping distributions
+
+Quick boxplot visualization
+```{r}
+
+# Quik plot
+ggplot(Correlation_Score_Cards_Task, aes(x = exp, y = cor, fill = exp))+
+geom_boxplot(alpha = .7, show.legend = F)+
+  geom_point(shape = 21, position = position_jitter(), size = 3. ,stroke = 1)+
+   guides(fill = guide_legend(override.aes = list(size = 6)))+
+  labs(x = "", y = "Kendall tau scores", title = "Kendall tau scores per groups")
+```
+
+Statistical analysis
+```{r}
+
+# Krusal Wallis test (non parametric one-way ANOVA equivalent)
+kruskal = kruskal.test(cor ~ exp, data = Correlation_Score_Cards_Task)
+kruskal$data.name = "Mapping distirbution by Population Factor"
+kruskal
+
+# Pairwise comparison 
+Pairwise = pairwise.t.test(Correlation_Score_Cards_Task$cor, Correlation_Score_Cards_Task$exp,
+                 p.adjust.method = "BH")
+
+Pairwise$data.name = "Pairwise comparison for Population"
+Pairwise
+```
+
+Adults are different from Himba and preschooler, but preschooler and Himba are not between eachother
+
+
+
+
+
+# Numerosity Task
+
+## Inverse efficiency
+
+
+Looking at the distribution of the inverse efficiency (with target stimuli and correct answer only):
+
+```{r , echo=F, message=F, warning=FALSE, fig.cap=capFig('Same plot as above, except that here the results for each participant is presented (point), with boxplot and violin plot.'), fig.height=11, fig.width=14}
+
+pmean2 <- ggplot(data=Numerosity_Comparison_Task, aes(x=exp, y=invefi,  fill=condition))+
+  geom_violin(alpha=0.2, position = position_dodge(1))+
+  #geom_jitter(alpha=0.9, position = position_dodge(1))+
+  #stat_summary(fun.y=mean, geom="point", shape=23, size=2)
+  facet_grid(. ~ Task) +
+  geom_boxplot(width=0.1, alpha=0.7, position = position_dodge(1)) +
+  theme_bw(base_size=15) +
+  scale_fill_manual(values=c("tomato3", "slateblue2")) +
+  scale_color_manual(values=c("tomato3", "slateblue2")) +
+  #guides(fill=FALSE) +
+  labs(y="Mean inverse efficiency", x="") +
+  theme(axis.text.x = element_text(angle = 30, hjust=1))
+
+
+pmean2
+
+
+```
+
+Plotting mean values and Standard Error of the mean
+```{r , echo=F, message=F, warning=FALSE,  fig.height=9, fig.width=12}
+
+# compute the average mean for each condition, position and situation
+Numerosity_Comparison_Task %>%
+  dplyr::group_by(condition, Task, exp) %>%
+  dplyr::summarize(se = se(invefi),
+                   mean_invefi = mean(invefi, na.rm=TRUE)) -> rt_tab
+
+# plot table
+pmean <- ggplot(rt_tab, aes(x=condition, y=mean_invefi, colour=Task, group=Task)) +
+    geom_errorbar(aes(ymin=mean_invefi-se, ymax=mean_invefi+se), colour="black", width=.1, position=position_dodge(0.1)) +
+    geom_line(position=position_dodge(0.1)) +
+    geom_point(position=position_dodge(0.1), size=3) +
+  theme_bw(base_size=15) +
+  facet_grid(. ~ exp) +
+  labs(x="Congruency", y="Inverse Efficiency Score")
+
+pmean
+
+```
+
+
+### Himba 2021 - ANOVA analysis
+
+Here we compute ANOVA analysis for only Himba 2021, as they were the only group to perform the task with a between design for Task Istructions
+
+```{r}
+#select Data
+data_Himba21 = Numerosity_Comparison_Task[Numerosity_Comparison_Task$exp=="Himba Adults 2021",]
+
+# Make interested level as factors for ANOVA
+data_Himba21$Task = as.factor(data_Himba21$Task)
+data_Himba21$condition = as.factor(data_Himba21$condition)
+
+# Anova test
+res.aov <- anova_test(
+  data = data_Himba21, dv = invefi, wid = participant_id,
+  within = c(condition),
+  between = c(Task)
+  )
+
+# Change factor names for better output
+res.aov[,1] = c("Task_Instructions", "Congruency","Task_Instructions:Congruency")
+
+# Print anova table
+get_anova_table(res.aov)
+
+
+# Pairwise comparison for condition factors
+pairwise_results = data_Himba21%>%
+  group_by(Task)%>%
+  pairwise_t_test(
+    invefi ~ condition, paired  =TRUE,
+    p.adjust.method = "bonferroni", alternative = "less") 
+
+knitr::kable(pairwise_results)
+
+
+```
+
+### All experiments together (except Himbas 2021)
+
+**Experiment & Group & condition**:
+
+Note that *experiment* variable is between subject, while *group* and *condition* variables are within subject.
+
+
+
+```{r , echo=F, message=F, warning=FALSE}
+
+
+# Anova test
+res.aov <- anova_test(
+  data = Numerosity_Comparison_Task[!Numerosity_Comparison_Task$exp=="Himba Adults 2021",], dv = invefi, wid = participant_id,
+  within = c(Task, condition),
+  between = c(exp)
+  )
+
+# Change factor names for better output
+res.aov[,1] = c("Population","Task_Instructions", "Congruency","Population:Task_Instructions","Population:Congruency","Task_Instructions:Congruency","Populations:Task_Instructions:Congruency")
+
+# Print Anova Table
+get_anova_table(res.aov)
+
+
+# Pairwise comparison for Population factor
+pairwise_results =  Numerosity_Comparison_Task[!Numerosity_Comparison_Task$exp=="Himba Adults 2021",]%>%
+  pairwise_t_test(
+    invefi ~ exp,
+    p.adjust.method = "bonferroni") 
+
+knitr::kable(pairwise_results, caption = "Pairwise Group Level")
+
+# Pairwise comparison for Interaction
+pairwise_results =  Numerosity_Comparison_Task[!Numerosity_Comparison_Task$exp=="Himba Adults 2021",]%>%
+  group_by(Task,exp)%>%
+  pairwise_t_test(
+    invefi ~ condition, paired  =TRUE,
+    p.adjust.method = "bonferroni", alternative = "less") 
+
+
+
+knitr::kable(pairwise_results, caption = "Pairwise Interaction ~ Less alternative")
+
+
+```
+
+
+
+## Congruency effect IE
+
+```{r} 
+# Reshaping Dataset
+wide_data = dcast(Numerosity_Comparison_Task, participant_id*Task*exp ~ condition , value.var = "invefi")
+
+# Calculating Congruency Effect for the Inverse Efficiency Score
+wide_data$congruencyEffect_IE = (wide_data$Incongruent - wide_data$Congruent)/(wide_data$Incongruent + wide_data$Congruent)
+
+wide_data$exp = factor(wide_data$exp,levels = c("Italian Adults", "Himba Adults 2021", "Himba Adults 2022", "Italian Preschoolers"))
+
+
+# T_test versus chance level for each population and Task Instructions
+stat.test <- wide_data %>% 
+  group_by( Task, exp) %>%
+  t_test(congruencyEffect_IE ~ 1, mu = 0) %>%
+  add_significance() %>%
+  add_xy_position(fun = "mean_se", x = "Task")
+
+knitr::kable(stat.test, caption = "T-test versus chance level")
+
+
+# Plot Congruency Effect 
+graph_1 = ggplot(wide_data,aes( x = Task, y = congruencyEffect_IE, fill =Task))+
+  stat_summary(fun = mean, geom = "bar", position = position_dodge(0.75), color = "Black", linewidth = .5, alpha = .8, width = 0.8) +
+   stat_summary( fun =mean, geom ="point", size =1.5,  shape =21, fill ="black", alpha = .9, position = position_dodge(0.75), show.legend = F)+
+   stat_summary(fun.data = mean_se, geom = "errorbar", alpha= 0.7, width=.15, position = position_dodge(0.75))+
+    scale_y_continuous( breaks = seq(-0.04, 0.06, by = 0.02))+
+    theme_classic()+
+ theme(panel.grid.major.x = element_blank(), 
+        panel.grid.major.y = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         panel.spacing.x = unit(2.5, "lines"), 
+         aspect.ratio = 1,
+         axis.line.x = element_blank(),
+         axis.text.x = element_blank(),
+         axis.ticks.x =  element_blank(),
+         axis.title.y = element_text(size = 10),
+         axis.text.y = element_text(size = 10),
+         legend.position  = "bottom",
+         plot.title = element_text(size = 14, face = "bold")) + 
+    scale_fill_manual(values = c("#d21500", "grey"), name="")+
+    geom_hline(yintercept = 0, linetype = "solid", linewidth =1)+
+   facet_grid(~ exp, scales = "free_x") +
+   labs(title = "Experiment 2 - Number Comparison Task", y = "Congruency Effect", x ="Task")
+ 
+
+graph_stat = graph_1+ stat_pvalue_manual(stat.test, x = "Task", label = "p.signif",size = 6, hide.ns = T)
+graph_stat
+
+
+
+# Plot Congruency Effect Distributions
+graph_1 = ggplot(wide_data,aes( x = Task, y = congruencyEffect_IE, fill =Task))+
+  geom_half_dotplot(dotsize = 1, binaxis = 'y', binwidth = .0075, show.legend = F ) +
+  geom_half_violin(alpha = .7, trim=F)+
+    scale_fill_manual(values = c("#d21500", "grey"))+
+  scale_y_continuous(breaks = seq(-.5,.5, by =.1))+
+    scale_color_manual(values = c("#d21500", "grey"))+
+    theme_classic()+
+  theme(panel.grid.major.x = element_blank(), 
+        panel.grid.major.y = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         panel.spacing.x = unit(2.5, "lines"), 
+         axis.line.x = element_blank(),
+         axis.text.x = element_blank(),
+         axis.ticks.x =  element_blank(),
+         axis.title.y = element_text(size = 10),
+         axis.text.y = element_text(size = 10),
+         legend.position  = "bottom",
+         plot.title = element_text(size = 14, face = "bold")) + 
+  geom_hline(yintercept = 0, linetype = "dashed", size =1)+
+  facet_grid(~ exp) +
+   labs(title = "Conguency Effect - Inverse Efficiency", y = "Congruency Effect")
+ 
+graph_1
+```
+
+Here we perform statistical analysis to verify whether the Congruency Effect vary across groups and task (no Himba 2021)
+```{r} 
+# Anova test on Congruency Effect (No Himba 2021)
+Anova_CE = anova_test(wide_data[!wide_data$exp == "Himba Adults 2021",], dv = congruencyEffect_IE, between = exp, within = Task, wid = participant_id)
+
+knitr::kable(Anova_CE, caption = "Anova for Congruency Effect (No Himba 2021)")
+```
+
+Himba 2021 tested separately as Task Instructions is a Between factor for them:
+
+```{r} 
+
+t_test_himba2021CE = t.test(wide_data[wide_data$exp == "Himba Adults 2021" & wide_data$Task == "Decreasing",]$congruencyEffect_IE, wide_data[wide_data$exp == "Himba Adults 2021" & wide_data$Task == "Increasing",]$congruencyEffect_IE)
+
+t_test_himba2021CE$data.name = "Congruency Effect by Task Instructions in Himba 2021"
+
+t_test_himba2021CE
+ 
+```
+
+
+
+# Correlation between Task 
+Here we verify Independence of the two tasks. If the DV of one task correlates with the DV of the other it probably means that the Tasks are measuring the same undergoing mechanism, we do no expect them to be not correlated.
+
+Italian Adults are removed from the analysis due to the skewness of their data (~98% of participants have Kendall tau score equal to 1)
+
+
+```{r}
+
+# remove Italian Adults
+correlation_selected = Correlation_Score_Cards_Task[Correlation_Score_Cards_Task$exp != "Italian Adults",]
+
+colnames(correlation_selected)[1] = "participant_id"
+
+# Get participant ID for Ordering Cards Task
+Id_selectd = correlation_selected$participant_id
+
+# Select same participant from numerosity comparison Task
+data_Tau_selected = wide_data[wide_data$participant_id %in% Id_selectd,]
+
+# Merge datasets
+combine_dataset  = merge(data_Tau_selected, correlation_selected[, c("participant_id", "cor")], by =c("participant_id"))
+
+```
+
+Correlation analysis
+```{r}
+Decreasing_cor = cor.test(combine_dataset[combine_dataset$Task == "Decreasing",]$cor, combine_dataset[combine_dataset$Task == "Decreasing",]$congruencyEffect_IE , method = "kendall")
+Decreasing_cor$data.name = "Correlation between Congruency Effect in Decreasing Task and Kendall Tau correlation scores from Ordering cards task"
+
+Increasing_cor = cor.test(combine_dataset[combine_dataset$Task == "Increasing",]$cor, combine_dataset[combine_dataset$Task == "Increasing",]$congruencyEffect_IE , method = "kendall")
+Increasing_cor$data.name = "Correlation between Congruency Effect in Increasing Task and Kendall Tau correlation scores from Ordering cards task"
+
+
+Decreasing_cor
+Increasing_cor
+```
+
+
+Correlation Plot between the two tasks measures, for each Task instructions
+
+```{r}
+# Correlation plot for each task instruction
+ggplot(combine_dataset, aes(x = cor, y = congruencyEffect_IE, color = Task, fill = Task))+
+  geom_point(size =2, show.legend = T)+
+  stat_smooth(alpha = .3)+
+  stat_cor(data =combine_dataset[combine_dataset$Task == "Increasing",],aes(color = Task), method = "kendall", label.y = .3,  show.legend = F)+
+  stat_cor(data =combine_dataset[combine_dataset$Task == "Decreasing",],aes(color = Task), method = "kendall", label.y = .32, show.legend = F)+
+  geom_hline(yintercept = 0,  linetype='dotted', col = 'black', size = 1)+
+   theme_classic()+
+   theme(panel.grid.major.y = element_line(), 
+        panel.grid.major.x = element_line(), 
+         strip.background = element_blank(), 
+         strip.text = element_text(size = rel(1.2)),
+         axis.title.y = element_text(size = 12),
+         axis.text.y = element_text(size = 12),
+         legend.position = "right",
+         plot.title = element_text(size = 14, face = "bold"),
+        legend.key.size = unit(1.5,"line"))+
+  scale_y_continuous(breaks = c(-.2,-.1,0,.1,.2))+
+    scale_fill_manual(values = c("#d21500", "grey"), name="")+
+  scale_color_manual(values = c("#d21500", "grey"), name="")+
+  labs(title = "Kendall tau correlation between Tasks",  x = "Kendall Tau correlation scores from Ordering cards task", y = "Inverse Efficiency Score from Numerosity comparison task")
+```
+
+
+```{r}
+knitr::write_bib(c(.packages()), "packages.bib")
+
+
+```
+

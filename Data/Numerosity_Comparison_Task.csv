@@ -1,0 +1,771 @@
+"participant_id","Task","condition","exp","mean_time","mean_error","invefi"
+"01","Increasing","Congruent","Italian Adults",0.435678733333333,0,0.435678733333333
+"01","Increasing","Incongruent","Italian Adults",0.374728133333333,0,0.374728133333333
+"01","Decreasing","Incongruent","Italian Adults",0.4014294,0,0.4014294
+"01","Decreasing","Congruent","Italian Adults",0.368128733333333,0,0.368128733333333
+"02","Decreasing","Congruent","Italian Adults",0.514838,0,0.514838
+"02","Increasing","Incongruent","Italian Adults",0.520704142857143,0.0666666666666667,0.557897295918367
+"02","Increasing","Congruent","Italian Adults",0.533660266666667,0,0.533660266666667
+"02","Decreasing","Incongruent","Italian Adults",0.520724428571429,0.0666666666666667,0.557919030612245
+"03","Decreasing","Congruent","Italian Adults",0.613946066666667,0,0.613946066666667
+"03","Increasing","Congruent","Italian Adults",0.614763933333333,0,0.614763933333333
+"03","Increasing","Incongruent","Italian Adults",0.572482666666667,0,0.572482666666667
+"03","Decreasing","Incongruent","Italian Adults",0.600641733333333,0,0.600641733333333
+"04","Increasing","Congruent","Italian Adults",0.427466733333333,0,0.427466733333333
+"04","Decreasing","Incongruent","Italian Adults",0.411349933333333,0,0.411349933333333
+"04","Decreasing","Congruent","Italian Adults",0.449051466666667,0,0.449051466666667
+"04","Increasing","Incongruent","Italian Adults",0.440539866666667,0,0.440539866666667
+"06","Decreasing","Incongruent","Italian Adults",0.478268066666667,0,0.478268066666667
+"06","Increasing","Incongruent","Italian Adults",0.467009866666667,0,0.467009866666667
+"06","Increasing","Congruent","Italian Adults",0.4268202,0,0.4268202
+"06","Decreasing","Congruent","Italian Adults",0.438523133333333,0,0.438523133333333
+"07","Increasing","Incongruent","Italian Adults",0.515718533333333,0,0.515718533333333
+"07","Decreasing","Incongruent","Italian Adults",0.432356,0,0.432356
+"07","Decreasing","Congruent","Italian Adults",0.426954266666667,0,0.426954266666667
+"07","Increasing","Congruent","Italian Adults",0.582832666666667,0,0.582832666666667
+"08","Increasing","Incongruent","Italian Adults",0.4862452,0,0.4862452
+"08","Increasing","Congruent","Italian Adults",0.522626133333333,0,0.522626133333333
+"08","Decreasing","Congruent","Italian Adults",0.525703933333333,0,0.525703933333333
+"08","Decreasing","Incongruent","Italian Adults",0.611436266666667,0,0.611436266666667
+"10","Decreasing","Incongruent","Italian Adults",0.373983933333333,0,0.373983933333333
+"10","Decreasing","Congruent","Italian Adults",0.3683494,0,0.3683494
+"10","Increasing","Congruent","Italian Adults",0.346223133333333,0,0.346223133333333
+"10","Increasing","Incongruent","Italian Adults",0.319273133333333,0,0.319273133333333
+"101","Decreasing","Congruent","Italian Preschoolers",0.5628382,0,0.5628382
+"101","Decreasing","Incongruent","Italian Preschoolers",0.790220357142857,0.0666666666666667,0.846664668367347
+"101","Increasing","Congruent","Italian Preschoolers",0.5383944,0,0.5383944
+"101","Increasing","Incongruent","Italian Preschoolers",0.527854,0,0.527854
+"102","Decreasing","Congruent","Italian Preschoolers",1.11781092307692,0.133333333333333,1.28978183431953
+"102","Decreasing","Incongruent","Italian Preschoolers",1.34004608333333,0.2,1.67505760416667
+"102","Increasing","Congruent","Italian Preschoolers",1.10221064285714,0.0666666666666667,1.1809399744898
+"102","Increasing","Incongruent","Italian Preschoolers",0.9154838,0,0.9154838
+"1027","Decreasing","Congruent","Himba Adults 2021",1.31401314285714,0.125,1.50172930612245
+"1027","Decreasing","Incongruent","Himba Adults 2021",1.0132424,0.166666666666667,1.21589088
+"1028","Decreasing","Congruent","Himba Adults 2021",0.621725285714286,0.125,0.710543183673469
+"1028","Decreasing","Incongruent","Himba Adults 2021",0.804465166666667,0,0.804465166666667
+"1029","Decreasing","Incongruent","Himba Adults 2021",0.51999875,0.333333333333333,0.779998125
+"1029","Decreasing","Congruent","Himba Adults 2021",0.5159485,0.25,0.687931333333333
+"103","Decreasing","Congruent","Italian Preschoolers",1.26553155555556,0.4,2.10921925925926
+"103","Decreasing","Incongruent","Italian Preschoolers",1.2887137,0.333333333333333,1.93307055
+"103","Increasing","Congruent","Italian Preschoolers",1.28900673333333,0,1.28900673333333
+"103","Increasing","Incongruent","Italian Preschoolers",1.44276907142857,0.0666666666666667,1.54582400510204
+"1030","Decreasing","Incongruent","Himba Adults 2021",0.653752,0,0.653752
+"1030","Decreasing","Congruent","Himba Adults 2021",0.55007075,0,0.55007075
+"1041","Decreasing","Congruent","Himba Adults 2021",0.611832625,0,0.611832625
+"1041","Decreasing","Incongruent","Himba Adults 2021",0.955647833333333,0,0.955647833333333
+"1042","Decreasing","Congruent","Himba Adults 2021",0.509749625,0,0.509749625
+"1042","Decreasing","Incongruent","Himba Adults 2021",0.73493,0,0.73493
+"1043","Decreasing","Incongruent","Himba Adults 2021",0.7238124,0.166666666666667,0.86857488
+"1043","Decreasing","Congruent","Himba Adults 2021",0.898217,0,0.898217
+"1045","Decreasing","Congruent","Himba Adults 2021",0.456083333333333,0.25,0.608111111111111
+"1045","Decreasing","Incongruent","Himba Adults 2021",0.50026475,0.333333333333333,0.750397125
+"1046","Decreasing","Incongruent","Himba Adults 2021",0.7313396,0,0.7313396
+"1046","Decreasing","Congruent","Himba Adults 2021",0.6178502,0,0.6178502
+"1047","Increasing","Congruent","Himba Adults 2021",0.703004533333333,0,0.703004533333333
+"1047","Increasing","Incongruent","Himba Adults 2021",0.6832066,0,0.6832066
+"1048","Decreasing","Incongruent","Himba Adults 2021",0.938171,0,0.938171
+"1048","Decreasing","Congruent","Himba Adults 2021",0.7886494,0,0.7886494
+"1049","Increasing","Congruent","Himba Adults 2021",0.7904276,0.333333333333333,1.1856414
+"1049","Increasing","Incongruent","Himba Adults 2021",0.7827418,0.333333333333333,1.1741127
+"105","Decreasing","Congruent","Italian Preschoolers",1.34749013333333,0,1.34749013333333
+"105","Decreasing","Incongruent","Italian Preschoolers",1.38924638461538,0.133333333333333,1.60297659763314
+"105","Increasing","Congruent","Italian Preschoolers",1.45307921428571,0.0666666666666667,1.55687058673469
+"105","Increasing","Incongruent","Italian Preschoolers",1.35574841666667,0.2,1.69468552083333
+"106","Decreasing","Congruent","Italian Preschoolers",2.10019245454545,0.266666666666667,2.86389880165289
+"106","Decreasing","Incongruent","Italian Preschoolers",1.94908227272727,0.266666666666667,2.65783946280992
+"106","Increasing","Congruent","Italian Preschoolers",1.78398484615385,0.133333333333333,2.05844405325444
+"106","Increasing","Incongruent","Italian Preschoolers",1.80828215384615,0.133333333333333,2.08647940828402
+"1061","Increasing","Congruent","Himba Adults 2021",0.551870333333333,0,0.551870333333333
+"1061","Increasing","Incongruent","Himba Adults 2021",0.858372533333333,0,0.858372533333333
+"1062","Increasing","Incongruent","Himba Adults 2021",0.999145733333333,0,0.999145733333333
+"1062","Increasing","Congruent","Himba Adults 2021",1.27832364285714,0.0666666666666667,1.3696324744898
+"1064","Decreasing","Incongruent","Himba Adults 2021",0.647395333333333,0,0.647395333333333
+"1064","Decreasing","Congruent","Himba Adults 2021",0.649612928571429,0.0666666666666667,0.696013852040816
+"1065","Increasing","Congruent","Himba Adults 2021",0.5368806,0,0.5368806
+"1065","Increasing","Incongruent","Himba Adults 2021",0.4891768,0,0.4891768
+"1068","Increasing","Incongruent","Himba Adults 2021",0.927166666666667,0.2,1.15895833333333
+"1068","Increasing","Congruent","Himba Adults 2021",0.961974,0.0666666666666667,1.03068642857143
+"1069","Increasing","Congruent","Himba Adults 2021",0.919996888888889,0.4,1.53332814814815
+"1069","Increasing","Incongruent","Himba Adults 2021",0.593184666666667,0.4,0.988641111111111
+"1070","Decreasing","Incongruent","Himba Adults 2021",0.7006265,0.2,0.875783125
+"1070","Decreasing","Congruent","Himba Adults 2021",0.904152428571429,0.0666666666666667,0.968734744897959
+"1081","Increasing","Congruent","Himba Adults 2021",0.534211222222222,0.4,0.890352037037037
+"1081","Increasing","Incongruent","Himba Adults 2021",0.5440779,0.333333333333333,0.81611685
+"1082","Increasing","Incongruent","Himba Adults 2021",0.589957428571429,0.0666666666666667,0.632097244897959
+"1082","Increasing","Congruent","Himba Adults 2021",0.682381538461538,0.133333333333333,0.787363313609467
+"1083","Decreasing","Incongruent","Himba Adults 2021",1.17919669230769,0.133333333333333,1.36061156804734
+"1083","Decreasing","Congruent","Himba Adults 2021",1.47958028571429,0.0666666666666667,1.58526459183673
+"1085","Decreasing","Congruent","Himba Adults 2021",1.0256645,0.333333333333333,1.53849675
+"1085","Decreasing","Incongruent","Himba Adults 2021",1.3145945,0.466666666666667,2.4648646875
+"1086","Increasing","Incongruent","Himba Adults 2021",0.470860285714286,0.0666666666666667,0.504493163265306
+"1086","Increasing","Congruent","Himba Adults 2021",0.539399466666667,0,0.539399466666667
+"109","Decreasing","Congruent","Italian Preschoolers",1.059187,0.0666666666666667,1.13484321428571
+"109","Decreasing","Incongruent","Italian Preschoolers",1.1983338,0,1.1983338
+"109","Increasing","Congruent","Italian Preschoolers",1.03632713333333,0,1.03632713333333
+"109","Increasing","Incongruent","Italian Preschoolers",0.965608285714286,0.0666666666666667,1.03458030612245
+"1090","Decreasing","Incongruent","Himba Adults 2021",1.50934428571429,0.0666666666666667,1.61715459183673
+"1090","Decreasing","Congruent","Himba Adults 2021",1.35368353846154,0.133333333333333,1.5619425443787
+"11","Decreasing","Incongruent","Italian Adults",0.4505682,0,0.4505682
+"11","Increasing","Congruent","Italian Adults",0.557453,0,0.557453
+"11","Increasing","Incongruent","Italian Adults",0.5707852,0,0.5707852
+"11","Decreasing","Congruent","Italian Adults",0.4594042,0,0.4594042
+"110","Decreasing","Congruent","Italian Preschoolers",0.763823333333333,0,0.763823333333333
+"110","Decreasing","Incongruent","Italian Preschoolers",0.886108133333333,0,0.886108133333333
+"110","Increasing","Congruent","Italian Preschoolers",0.724465133333333,0,0.724465133333333
+"110","Increasing","Incongruent","Italian Preschoolers",0.820468857142857,0.0666666666666667,0.879073775510204
+"1101","Increasing","Incongruent","Himba Adults 2021",1.4915835,0.333333333333333,2.23737525
+"1101","Increasing","Congruent","Himba Adults 2021",1.26314308333333,0.2,1.57892885416667
+"1103","Increasing","Congruent","Himba Adults 2021",0.5169823,0.333333333333333,0.77547345
+"1103","Increasing","Incongruent","Himba Adults 2021",0.5161791,0.333333333333333,0.77426865
+"1104","Decreasing","Incongruent","Himba Adults 2021",1.46104341666667,0.2,1.82630427083333
+"1104","Decreasing","Congruent","Himba Adults 2021",1.41335563636364,0.266666666666667,1.92730314049587
+"1107","Decreasing","Congruent","Himba Adults 2021",1.25777021428571,0.0666666666666667,1.34761094387755
+"1107","Decreasing","Incongruent","Himba Adults 2021",1.52824327272727,0.266666666666667,2.08396809917355
+"1109","Increasing","Congruent","Himba Adults 2021",1.21268218181818,0.266666666666667,1.65365752066116
+"1109","Increasing","Incongruent","Himba Adults 2021",1.21166735714286,0.0666666666666667,1.2982150255102
+"111","Decreasing","Congruent","Italian Preschoolers",1.7164123,0.333333333333333,2.57461845
+"111","Decreasing","Incongruent","Italian Preschoolers",1.7578425,0.333333333333333,2.63676375
+"111","Increasing","Congruent","Italian Preschoolers",1.61817083333333,0.2,2.02271354166667
+"111","Increasing","Incongruent","Italian Preschoolers",1.73681890909091,0.266666666666667,2.3683894214876
+"1110","Decreasing","Congruent","Himba Adults 2021",1.48759230769231,0.133333333333333,1.71645266272189
+"1110","Decreasing","Incongruent","Himba Adults 2021",1.68197166666667,0.4,2.80328611111111
+"112","Decreasing","Congruent","Italian Preschoolers",1.03816142857143,0.0666666666666667,1.11231581632653
+"112","Decreasing","Incongruent","Italian Preschoolers",1.35002238461538,0.133333333333333,1.55771813609467
+"112","Increasing","Congruent","Italian Preschoolers",0.939667133333333,0,0.939667133333333
+"112","Increasing","Incongruent","Italian Preschoolers",0.978857142857143,0.0666666666666667,1.04877551020408
+"1123","Decreasing","Congruent","Himba Adults 2021",1.13245084615385,0.133333333333333,1.30667405325444
+"1123","Decreasing","Incongruent","Himba Adults 2021",1.20944407142857,0.0666666666666667,1.29583293367347
+"1126","Increasing","Congruent","Himba Adults 2021",0.619324333333333,0,0.619324333333333
+"1126","Increasing","Incongruent","Himba Adults 2021",0.756093,0.0666666666666667,0.810099642857143
+"1127","Decreasing","Incongruent","Himba Adults 2021",0.971049857142857,0.0666666666666667,1.04041056122449
+"1127","Decreasing","Congruent","Himba Adults 2021",0.8844815,0.0666666666666667,0.94765875
+"1128","Increasing","Incongruent","Himba Adults 2021",1.04303228571429,0.0666666666666667,1.11753459183673
+"1128","Increasing","Congruent","Himba Adults 2021",1.00217915384615,0.133333333333333,1.15636056213018
+"1129","Decreasing","Incongruent","Himba Adults 2021",0.839695,0,0.839695
+"1129","Decreasing","Congruent","Himba Adults 2021",0.714859142857143,0.0666666666666667,0.765920510204082
+"113","Increasing","Incongruent","Italian Preschoolers",0.949427846153846,0.133333333333333,1.09549366863905
+"113","Decreasing","Congruent","Italian Preschoolers",0.911091454545455,0.266666666666667,1.24239743801653
+"113","Decreasing","Incongruent","Italian Preschoolers",1.14852944444444,0.4,1.91421574074074
+"113","Increasing","Congruent","Italian Preschoolers",0.905533214285714,0.0666666666666667,0.970214158163265
+"1130","Increasing","Congruent","Himba Adults 2021",0.433508066666667,0,0.433508066666667
+"1130","Increasing","Incongruent","Himba Adults 2021",0.528845266666667,0,0.528845266666667
+"114","Decreasing","Congruent","Italian Preschoolers",0.886844692307692,0.133333333333333,1.02328233727811
+"114","Decreasing","Incongruent","Italian Preschoolers",1.20984066666667,0.2,1.51230083333333
+"114","Increasing","Congruent","Italian Preschoolers",0.9078732,0.333333333333333,1.3618098
+"114","Increasing","Incongruent","Italian Preschoolers",0.8189449,0.333333333333333,1.22841735
+"1141","Decreasing","Congruent","Himba Adults 2021",1.82823375,0.2,2.2852921875
+"1141","Decreasing","Incongruent","Himba Adults 2021",2.16774163636364,0.266666666666667,2.95601132231405
+"1142","Increasing","Congruent","Himba Adults 2021",1.16448385714286,0.0666666666666667,1.2476612755102
+"1142","Increasing","Incongruent","Himba Adults 2021",1.02188669230769,0.133333333333333,1.1791000295858
+"1143","Decreasing","Incongruent","Himba Adults 2021",0.545074,0,0.545074
+"1143","Decreasing","Congruent","Himba Adults 2021",0.522772066666667,0,0.522772066666667
+"1144","Increasing","Congruent","Himba Adults 2021",0.8468342,0,0.8468342
+"1144","Increasing","Incongruent","Himba Adults 2021",0.735863785714286,0.0666666666666667,0.788425484693878
+"1145","Decreasing","Incongruent","Himba Adults 2021",0.489877181818182,0.266666666666667,0.668014338842975
+"1145","Decreasing","Congruent","Himba Adults 2021",0.739741666666667,0.2,0.924677083333333
+"1146","Increasing","Congruent","Himba Adults 2021",0.97822,0.266666666666667,1.33393636363636
+"1146","Increasing","Incongruent","Himba Adults 2021",0.7738572,0.333333333333333,1.1607858
+"1147","Increasing","Congruent","Himba Adults 2021",1.22820007692308,0.133333333333333,1.41715393491124
+"1147","Increasing","Incongruent","Himba Adults 2021",1.52391023076923,0.133333333333333,1.75835795857988
+"1148","Decreasing","Congruent","Himba Adults 2021",1.52775471428571,0.0666666666666667,1.63688005102041
+"1148","Decreasing","Incongruent","Himba Adults 2021",1.55955833333333,0.2,1.94944791666667
+"1149","Decreasing","Congruent","Himba Adults 2021",1.7204299,0.333333333333333,2.58064485
+"1149","Decreasing","Incongruent","Himba Adults 2021",1.44544914285714,0.533333333333333,3.09739102040816
+"115","Increasing","Congruent","Italian Preschoolers",0.7409689,0.333333333333333,1.11145335
+"115","Decreasing","Incongruent","Italian Preschoolers",1.4533265,0.0666666666666667,1.55713553571429
+"115","Increasing","Incongruent","Italian Preschoolers",0.723869181818182,0.266666666666667,0.987094338842975
+"115","Decreasing","Congruent","Italian Preschoolers",1.23765421428571,0.0666666666666667,1.32605808673469
+"1150","Increasing","Congruent","Himba Adults 2021",0.378305,0.266666666666667,0.515870454545455
+"1150","Increasing","Incongruent","Himba Adults 2021",0.4132811,0.333333333333333,0.61992165
+"116","Increasing","Incongruent","Italian Preschoolers",1.233564,0.133333333333333,1.42334307692308
+"116","Decreasing","Congruent","Italian Preschoolers",1.0898755,0.333333333333333,1.63481325
+"116","Decreasing","Incongruent","Italian Preschoolers",1.154447,0.333333333333333,1.7316705
+"116","Increasing","Congruent","Italian Preschoolers",1.2170365,0.0666666666666667,1.30396767857143
+"1161","Decreasing","Incongruent","Himba Adults 2021",0.578880466666667,0,0.578880466666667
+"1161","Decreasing","Congruent","Himba Adults 2021",0.588988,0.0666666666666667,0.631058571428571
+"1162","Increasing","Incongruent","Himba Adults 2021",0.6047925,0.333333333333333,0.90718875
+"1162","Increasing","Congruent","Himba Adults 2021",0.5807812,0.333333333333333,0.8711718
+"1163","Decreasing","Congruent","Himba Adults 2021",0.898321733333333,0,0.898321733333333
+"1163","Decreasing","Incongruent","Himba Adults 2021",0.9417278,0,0.9417278
+"1164","Increasing","Incongruent","Himba Adults 2021",0.517991866666667,0,0.517991866666667
+"1164","Increasing","Congruent","Himba Adults 2021",0.562015133333333,0,0.562015133333333
+"1165","Increasing","Congruent","Himba Adults 2021",0.5422071,0.333333333333333,0.81331065
+"1165","Increasing","Incongruent","Himba Adults 2021",0.4858091,0.333333333333333,0.72871365
+"1166","Decreasing","Congruent","Himba Adults 2021",0.548419,0,0.548419
+"1166","Decreasing","Incongruent","Himba Adults 2021",0.543467266666667,0,0.543467266666667
+"1167","Decreasing","Incongruent","Himba Adults 2021",0.736252,0,0.736252
+"1167","Decreasing","Congruent","Himba Adults 2021",0.717422933333333,0,0.717422933333333
+"1168","Increasing","Incongruent","Himba Adults 2021",0.511669,0.333333333333333,0.7675035
+"1168","Increasing","Congruent","Himba Adults 2021",0.546174636363636,0.266666666666667,0.744783595041322
+"1169","Decreasing","Congruent","Himba Adults 2021",0.591268,0,0.591268
+"1169","Decreasing","Incongruent","Himba Adults 2021",0.672539133333333,0,0.672539133333333
+"117","Decreasing","Congruent","Italian Preschoolers",1.70681442857143,0.0666666666666667,1.82872974489796
+"117","Decreasing","Incongruent","Italian Preschoolers",1.61903692857143,0.0666666666666667,1.73468242346939
+"117","Increasing","Congruent","Italian Preschoolers",1.132905,0.133333333333333,1.30719807692308
+"117","Increasing","Incongruent","Italian Preschoolers",1.59297993333333,0,1.59297993333333
+"1170","Decreasing","Incongruent","Himba Adults 2021",0.744572769230769,0.133333333333333,0.859122426035503
+"1170","Decreasing","Congruent","Himba Adults 2021",0.584906615384615,0.133333333333333,0.67489224852071
+"118","Decreasing","Congruent","Italian Preschoolers",1.34796561538462,0.133333333333333,1.5553449408284
+"118","Decreasing","Incongruent","Italian Preschoolers",1.24015192307692,0.133333333333333,1.43094452662722
+"118","Increasing","Congruent","Italian Preschoolers",1.729245,0.4,2.882075
+"118","Increasing","Incongruent","Italian Preschoolers",1.49046444444444,0.4,2.48410740740741
+"1181","Increasing","Incongruent","Himba Adults 2021",0.725762666666667,0.4,1.20960444444444
+"1181","Increasing","Congruent","Himba Adults 2021",0.801220888888889,0.4,1.33536814814815
+"1182","Decreasing","Incongruent","Himba Adults 2021",0.4807695,0.0666666666666667,0.515110178571429
+"1182","Decreasing","Congruent","Himba Adults 2021",0.494413733333333,0,0.494413733333333
+"119","Increasing","Incongruent","Italian Preschoolers",0.782553666666667,0.2,0.978192083333333
+"119","Decreasing","Congruent","Italian Preschoolers",1.31265133333333,0.4,2.18775222222222
+"119","Increasing","Congruent","Italian Preschoolers",0.99398,0.133333333333333,1.1469
+"119","Decreasing","Incongruent","Italian Preschoolers",1.2883788,0.333333333333333,1.9325682
+"12","Increasing","Congruent","Italian Adults",0.4982918,0,0.4982918
+"12","Increasing","Incongruent","Italian Adults",0.461793533333333,0,0.461793533333333
+"12","Decreasing","Congruent","Italian Adults",0.501449533333333,0,0.501449533333333
+"12","Decreasing","Incongruent","Italian Adults",0.5459494,0,0.5459494
+"120","Decreasing","Congruent","Italian Preschoolers",1.36161161538462,0.133333333333333,1.57109032544379
+"120","Decreasing","Incongruent","Italian Preschoolers",1.35721207142857,0.0666666666666667,1.45415579081633
+"120","Increasing","Congruent","Italian Preschoolers",1.14150835714286,0.0666666666666667,1.22304466836735
+"120","Increasing","Incongruent","Italian Preschoolers",1.1615365,0.0666666666666667,1.24450339285714
+"121","Decreasing","Congruent","Italian Preschoolers",0.909966384615385,0.133333333333333,1.04996121301775
+"121","Decreasing","Incongruent","Italian Preschoolers",0.712783461538462,0.133333333333333,0.822442455621302
+"121","Increasing","Congruent","Italian Preschoolers",0.9396178,0,0.9396178
+"121","Increasing","Incongruent","Italian Preschoolers",0.821263571428571,0.0666666666666667,0.879925255102041
+"122","Increasing","Congruent","Italian Preschoolers",1.88827518181818,0.266666666666667,2.57492070247934
+"122","Increasing","Incongruent","Italian Preschoolers",1.96020344444444,0.4,3.26700574074074
+"122","Decreasing","Congruent","Italian Preschoolers",1.54991533333333,0,1.54991533333333
+"122","Decreasing","Incongruent","Italian Preschoolers",1.65553638461538,0.133333333333333,1.91023428994083
+"123","Decreasing","Congruent","Italian Preschoolers",1.38066825,0.2,1.7258353125
+"123","Decreasing","Incongruent","Italian Preschoolers",1.372267,0.2,1.71533375
+"123","Increasing","Congruent","Italian Preschoolers",1.02002276923077,0.133333333333333,1.17694934911243
+"123","Increasing","Incongruent","Italian Preschoolers",1.10196273333333,0,1.10196273333333
+"124","Decreasing","Congruent","Italian Preschoolers",1.66148008333333,0.2,2.07685010416667
+"124","Decreasing","Incongruent","Italian Preschoolers",1.72259246153846,0.133333333333333,1.98760668639053
+"124","Increasing","Congruent","Italian Preschoolers",1.677395,0.533333333333333,3.59441785714286
+"124","Increasing","Incongruent","Italian Preschoolers",1.2865584,0.333333333333333,1.9298376
+"125","Decreasing","Congruent","Italian Preschoolers",1.1320772,0.333333333333333,1.6981158
+"125","Decreasing","Incongruent","Italian Preschoolers",0.9210316,0.333333333333333,1.3815474
+"125","Increasing","Congruent","Italian Preschoolers",1.4514397,0.333333333333333,2.17715955
+"125","Increasing","Incongruent","Italian Preschoolers",1.2833424,0.333333333333333,1.9250136
+"126","Decreasing","Congruent","Italian Preschoolers",0.636982733333333,0,0.636982733333333
+"126","Decreasing","Incongruent","Italian Preschoolers",0.941706866666667,0,0.941706866666667
+"126","Increasing","Congruent","Italian Preschoolers",0.6443669,0.333333333333333,0.96655035
+"126","Increasing","Incongruent","Italian Preschoolers",0.5961688,0.333333333333333,0.8942532
+"127","Decreasing","Congruent","Italian Preschoolers",0.977289714285714,0.533333333333333,2.09419224489796
+"127","Decreasing","Incongruent","Italian Preschoolers",1.59510977777778,0.4,2.6585162962963
+"127","Increasing","Congruent","Italian Preschoolers",1.65062833333333,0.4,2.75104722222222
+"127","Increasing","Incongruent","Italian Preschoolers",1.3897405,0.333333333333333,2.08461075
+"128","Increasing","Congruent","Italian Preschoolers",0.725853142857143,0.0666666666666667,0.777699795918367
+"128","Increasing","Incongruent","Italian Preschoolers",0.750433533333333,0,0.750433533333333
+"128","Decreasing","Incongruent","Italian Preschoolers",0.996041666666667,0.2,1.24505208333333
+"128","Decreasing","Congruent","Italian Preschoolers",1.09359633333333,0,1.09359633333333
+"129","Decreasing","Congruent","Italian Preschoolers",1.25362463636364,0.266666666666667,1.70948814049587
+"129","Decreasing","Incongruent","Italian Preschoolers",1.93053291666667,0.2,2.41316614583333
+"129","Increasing","Congruent","Italian Preschoolers",2.3638286,0.333333333333333,3.5457429
+"129","Increasing","Incongruent","Italian Preschoolers",2.24064892307692,0.133333333333333,2.58536414201183
+"13","Increasing","Incongruent","Italian Adults",0.354874466666667,0,0.354874466666667
+"13","Decreasing","Incongruent","Italian Adults",0.384037933333333,0,0.384037933333333
+"13","Decreasing","Congruent","Italian Adults",0.3328332,0,0.3328332
+"13","Increasing","Congruent","Italian Adults",0.3848674,0,0.3848674
+"130","Decreasing","Congruent","Italian Preschoolers",0.858973571428571,0.0666666666666667,0.920328826530612
+"130","Decreasing","Incongruent","Italian Preschoolers",0.960581933333333,0,0.960581933333333
+"130","Increasing","Congruent","Italian Preschoolers",0.804192142857143,0.0666666666666667,0.86163443877551
+"130","Increasing","Incongruent","Italian Preschoolers",0.717495461538462,0.133333333333333,0.827879378698225
+"131","Decreasing","Congruent","Italian Preschoolers",1.30070625,0.2,1.6258828125
+"131","Decreasing","Incongruent","Italian Preschoolers",1.31494953846154,0.133333333333333,1.51724946745562
+"131","Increasing","Congruent","Italian Preschoolers",1.09224192857143,0.0666666666666667,1.17025920918367
+"131","Increasing","Incongruent","Italian Preschoolers",1.00909171428571,0.0666666666666667,1.08116969387755
+"132","Decreasing","Congruent","Italian Preschoolers",1.33265972727273,0.266666666666667,1.81726326446281
+"132","Decreasing","Incongruent","Italian Preschoolers",1.314274,0.333333333333333,1.971411
+"132","Increasing","Congruent","Italian Preschoolers",1.25052707142857,0.0666666666666667,1.33985043367347
+"132","Increasing","Incongruent","Italian Preschoolers",1.07371930769231,0.133333333333333,1.23890689349112
+"133","Decreasing","Congruent","Italian Preschoolers",1.11280406666667,0,1.11280406666667
+"133","Decreasing","Incongruent","Italian Preschoolers",0.89941475,0.2,1.1242684375
+"133","Increasing","Congruent","Italian Preschoolers",1.02605046666667,0,1.02605046666667
+"133","Increasing","Incongruent","Italian Preschoolers",0.802800866666667,0,0.802800866666667
+"134","Decreasing","Congruent","Italian Preschoolers",1.16115814285714,0.0666666666666667,1.24409801020408
+"134","Decreasing","Incongruent","Italian Preschoolers",1.270748,0.0666666666666667,1.36151571428571
+"134","Increasing","Congruent","Italian Preschoolers",1.10714893333333,0,1.10714893333333
+"134","Increasing","Incongruent","Italian Preschoolers",1.0505865,0.0666666666666667,1.12562839285714
+"135","Decreasing","Congruent","Italian Preschoolers",1.4009625,0.333333333333333,2.10144375
+"135","Decreasing","Incongruent","Italian Preschoolers",1.3659597,0.333333333333333,2.04893955
+"135","Increasing","Congruent","Italian Preschoolers",1.22280966666667,0,1.22280966666667
+"135","Increasing","Incongruent","Italian Preschoolers",1.44697521428571,0.0666666666666667,1.55033058673469
+"136","Decreasing","Congruent","Italian Preschoolers",1.4859319,0.333333333333333,2.22889785
+"136","Decreasing","Incongruent","Italian Preschoolers",1.40864744444444,0.4,2.34774574074074
+"136","Increasing","Incongruent","Italian Preschoolers",1.820915,0.333333333333333,2.7313725
+"136","Increasing","Congruent","Italian Preschoolers",1.779309,0.333333333333333,2.6689635
+"139","Increasing","Congruent","Italian Preschoolers",1.54677661538462,0.133333333333333,1.78474224852071
+"139","Increasing","Incongruent","Italian Preschoolers",1.4826099,0.333333333333333,2.22391485
+"139","Decreasing","Incongruent","Italian Preschoolers",1.53529738461538,0.133333333333333,1.77149698224852
+"139","Decreasing","Congruent","Italian Preschoolers",1.6898045,0.0666666666666667,1.81050482142857
+"14","Increasing","Incongruent","Italian Adults",0.476142866666667,0,0.476142866666667
+"14","Decreasing","Congruent","Italian Adults",0.787234466666667,0,0.787234466666667
+"14","Decreasing","Incongruent","Italian Adults",0.835893,0,0.835893
+"14","Increasing","Congruent","Italian Adults",0.453931333333333,0,0.453931333333333
+"140","Increasing","Congruent","Italian Preschoolers",1.08863535714286,0.0666666666666667,1.1663950255102
+"140","Decreasing","Congruent","Italian Preschoolers",0.896741846153846,0.133333333333333,1.03470213017751
+"140","Decreasing","Incongruent","Italian Preschoolers",1.13031585714286,0.0666666666666667,1.21105270408163
+"140","Increasing","Incongruent","Italian Preschoolers",1.12904085714286,0.0666666666666667,1.20968663265306
+"141","Increasing","Incongruent","Italian Preschoolers",0.798306733333333,0,0.798306733333333
+"141","Decreasing","Congruent","Italian Preschoolers",0.739753083333333,0.2,0.924691354166667
+"141","Decreasing","Incongruent","Italian Preschoolers",0.955558727272727,0.266666666666667,1.30303462809917
+"141","Increasing","Congruent","Italian Preschoolers",0.838229533333333,0,0.838229533333333
+"142","Decreasing","Congruent","Italian Preschoolers",0.630585,0,0.630585
+"142","Decreasing","Incongruent","Italian Preschoolers",0.621700333333333,0,0.621700333333333
+"142","Increasing","Congruent","Italian Preschoolers",0.661615266666667,0,0.661615266666667
+"142","Increasing","Incongruent","Italian Preschoolers",0.595991857142857,0.0666666666666667,0.638562704081633
+"143","Increasing","Congruent","Italian Preschoolers",1.5770975,0.2,1.971371875
+"143","Increasing","Incongruent","Italian Preschoolers",1.75400657142857,0.0666666666666667,1.87929275510204
+"143","Decreasing","Congruent","Italian Preschoolers",1.7325339,0.333333333333333,2.59880085
+"143","Decreasing","Incongruent","Italian Preschoolers",1.4141814,0.333333333333333,2.1212721
+"15","Increasing","Incongruent","Italian Adults",0.424098266666667,0,0.424098266666667
+"15","Increasing","Congruent","Italian Adults",0.496872866666667,0,0.496872866666667
+"15","Decreasing","Congruent","Italian Adults",0.457875866666667,0,0.457875866666667
+"15","Decreasing","Incongruent","Italian Adults",0.4952612,0,0.4952612
+"17","Decreasing","Congruent","Italian Adults",0.327778866666667,0,0.327778866666667
+"17","Decreasing","Incongruent","Italian Adults",0.354678666666667,0,0.354678666666667
+"17","Increasing","Congruent","Italian Adults",0.2609224,0,0.2609224
+"17","Increasing","Incongruent","Italian Adults",0.278806,0,0.278806
+"19","Increasing","Congruent","Italian Adults",0.437130533333333,0,0.437130533333333
+"19","Increasing","Incongruent","Italian Adults",0.3701936,0,0.3701936
+"19","Decreasing","Incongruent","Italian Adults",0.459319066666667,0,0.459319066666667
+"19","Decreasing","Congruent","Italian Adults",0.4127598,0,0.4127598
+"20","Decreasing","Congruent","Italian Adults",0.676805133333333,0,0.676805133333333
+"20","Increasing","Congruent","Italian Adults",0.543334571428571,0.0666666666666667,0.582144183673469
+"20","Decreasing","Incongruent","Italian Adults",0.597815066666667,0,0.597815066666667
+"20","Increasing","Incongruent","Italian Adults",0.567116666666667,0,0.567116666666667
+"2005","Decreasing","Incongruent","Himba Adults 2022",0.450747266666667,0,0.450747266666667
+"2005","Increasing","Congruent","Himba Adults 2022",0.5817104,0,0.5817104
+"2005","Increasing","Incongruent","Himba Adults 2022",0.537435333333333,0,0.537435333333333
+"2005","Decreasing","Congruent","Himba Adults 2022",0.5473194,0,0.5473194
+"2006","Increasing","Incongruent","Himba Adults 2022",0.74446,0.333333333333333,1.11669
+"2006","Decreasing","Incongruent","Himba Adults 2022",0.6895152,0.333333333333333,1.0342728
+"2006","Decreasing","Congruent","Himba Adults 2022",0.5862136,0.333333333333333,0.8793204
+"2006","Increasing","Congruent","Himba Adults 2022",0.9576047,0.333333333333333,1.43640705
+"2008","Decreasing","Congruent","Himba Adults 2022",0.452514727272727,0.266666666666667,0.617065537190083
+"2008","Decreasing","Incongruent","Himba Adults 2022",0.492685583333333,0.2,0.615856979166667
+"2008","Increasing","Congruent","Himba Adults 2022",0.3829812,0.333333333333333,0.5744718
+"2008","Increasing","Incongruent","Himba Adults 2022",0.34646,0.266666666666667,0.472445454545455
+"2009","Increasing","Congruent","Himba Adults 2022",0.4328856,0.333333333333333,0.6493284
+"2009","Increasing","Incongruent","Himba Adults 2022",0.4212212,0.333333333333333,0.6318318
+"2009","Decreasing","Incongruent","Himba Adults 2022",0.455672636363636,0.266666666666667,0.621371776859504
+"2009","Decreasing","Congruent","Himba Adults 2022",0.448270384615385,0.133333333333333,0.517235059171598
+"2010","Decreasing","Congruent","Himba Adults 2022",0.5711842,0.333333333333333,0.8567763
+"2010","Increasing","Congruent","Himba Adults 2022",0.574605,0.333333333333333,0.8619075
+"2010","Decreasing","Incongruent","Himba Adults 2022",0.6461662,0.333333333333333,0.9692493
+"2010","Increasing","Incongruent","Himba Adults 2022",0.6362125,0.333333333333333,0.95431875
+"2011","Decreasing","Incongruent","Himba Adults 2022",0.5043551,0.333333333333333,0.75653265
+"2011","Increasing","Congruent","Himba Adults 2022",0.4494914,0.333333333333333,0.6742371
+"2011","Increasing","Incongruent","Himba Adults 2022",0.449582,0.333333333333333,0.674373
+"2011","Decreasing","Congruent","Himba Adults 2022",0.507895,0.333333333333333,0.7618425
+"2012","Increasing","Incongruent","Himba Adults 2022",0.5645847,0.333333333333333,0.84687705
+"2012","Decreasing","Incongruent","Himba Adults 2022",0.431108,0.333333333333333,0.646662
+"2012","Decreasing","Congruent","Himba Adults 2022",0.449541923076923,0.133333333333333,0.518702218934911
+"2012","Increasing","Congruent","Himba Adults 2022",0.5523675,0.2,0.690459375
+"2013","Decreasing","Congruent","Himba Adults 2022",0.434188428571429,0.0666666666666667,0.465201887755102
+"2013","Decreasing","Incongruent","Himba Adults 2022",0.554739,0.133333333333333,0.640083461538462
+"2013","Increasing","Congruent","Himba Adults 2022",0.36625375,0.2,0.4578171875
+"2013","Increasing","Incongruent","Himba Adults 2022",0.417712363636364,0.266666666666667,0.569607768595041
+"2014","Increasing","Congruent","Himba Adults 2022",0.5745498,0.333333333333333,0.8618247
+"2014","Increasing","Incongruent","Himba Adults 2022",0.5877615,0.333333333333333,0.88164225
+"2014","Decreasing","Incongruent","Himba Adults 2022",0.6144831,0.333333333333333,0.92172465
+"2014","Decreasing","Congruent","Himba Adults 2022",0.62448,0.333333333333333,0.93672
+"2015","Decreasing","Congruent","Himba Adults 2022",0.4813895,0.333333333333333,0.72208425
+"2015","Increasing","Congruent","Himba Adults 2022",0.7445189,0.333333333333333,1.11677835
+"2015","Decreasing","Incongruent","Himba Adults 2022",0.4629335,0.333333333333333,0.69440025
+"2015","Increasing","Incongruent","Himba Adults 2022",0.482776888888889,0.4,0.804628148148148
+"2017","Decreasing","Incongruent","Himba Adults 2022",0.538884545454545,0.266666666666667,0.734842561983471
+"2017","Increasing","Congruent","Himba Adults 2022",0.4694946,0.333333333333333,0.7042419
+"2017","Increasing","Incongruent","Himba Adults 2022",0.5279444,0.333333333333333,0.7919166
+"2017","Decreasing","Congruent","Himba Adults 2022",0.5111964,0.333333333333333,0.7667946
+"2019","Decreasing","Congruent","Himba Adults 2022",0.5011964,0.333333333333333,0.7517946
+"2019","Decreasing","Incongruent","Himba Adults 2022",0.5144933,0.333333333333333,0.77173995
+"2019","Increasing","Congruent","Himba Adults 2022",0.5011636,0.333333333333333,0.7517454
+"2019","Increasing","Incongruent","Himba Adults 2022",0.4811703,0.333333333333333,0.72175545
+"2020","Decreasing","Congruent","Himba Adults 2022",0.525218181818182,0.266666666666667,0.716206611570248
+"2020","Decreasing","Incongruent","Himba Adults 2022",0.5312065,0.333333333333333,0.79680975
+"2020","Increasing","Congruent","Himba Adults 2022",0.451739066666667,0,0.451739066666667
+"2020","Increasing","Incongruent","Himba Adults 2022",0.493980933333333,0,0.493980933333333
+"2022","Decreasing","Congruent","Himba Adults 2022",0.499414727272727,0.266666666666667,0.681020082644628
+"2022","Decreasing","Incongruent","Himba Adults 2022",0.5813076,0.333333333333333,0.8719614
+"2022","Increasing","Congruent","Himba Adults 2022",0.6928327,0.333333333333333,1.03924905
+"2022","Increasing","Incongruent","Himba Adults 2022",0.8027679,0.333333333333333,1.20415185
+"2024","Decreasing","Congruent","Himba Adults 2022",0.403699333333333,0.2,0.504624166666667
+"2024","Decreasing","Incongruent","Himba Adults 2022",0.39493,0.266666666666667,0.538540909090909
+"2024","Increasing","Congruent","Himba Adults 2022",0.4245673,0.333333333333333,0.63685095
+"2024","Increasing","Incongruent","Himba Adults 2022",0.423279583333333,0.2,0.529099479166667
+"2025","Decreasing","Congruent","Himba Adults 2022",0.414507454545455,0.266666666666667,0.565237438016529
+"2025","Decreasing","Incongruent","Himba Adults 2022",0.4394975,0.333333333333333,0.65924625
+"2025","Increasing","Congruent","Himba Adults 2022",0.4662269,0.333333333333333,0.69934035
+"2025","Increasing","Incongruent","Himba Adults 2022",0.4095527,0.333333333333333,0.61432905
+"2026","Decreasing","Congruent","Himba Adults 2022",0.6811958,0.333333333333333,1.0217937
+"2026","Decreasing","Incongruent","Himba Adults 2022",1.0279432,0.333333333333333,1.5419148
+"2026","Increasing","Congruent","Himba Adults 2022",0.55617,0.333333333333333,0.834255
+"2026","Increasing","Incongruent","Himba Adults 2022",0.5928367,0.333333333333333,0.88925505
+"2029","Decreasing","Congruent","Himba Adults 2022",0.6894022,0.333333333333333,1.0341033
+"2029","Decreasing","Incongruent","Himba Adults 2022",0.5895227,0.333333333333333,0.88428405
+"2029","Increasing","Congruent","Himba Adults 2022",0.665037533333333,0,0.665037533333333
+"2029","Increasing","Incongruent","Himba Adults 2022",0.5841972,0,0.5841972
+"2030","Decreasing","Congruent","Himba Adults 2022",0.575244818181818,0.266666666666667,0.784424752066116
+"2030","Decreasing","Incongruent","Himba Adults 2022",0.5696157,0.333333333333333,0.85442355
+"2030","Increasing","Congruent","Himba Adults 2022",0.4861752,0.333333333333333,0.7292628
+"2030","Increasing","Incongruent","Himba Adults 2022",0.5729246,0.333333333333333,0.8593869
+"2031","Decreasing","Congruent","Himba Adults 2022",0.51284,0.333333333333333,0.76926
+"2031","Decreasing","Incongruent","Himba Adults 2022",0.4661625,0.333333333333333,0.69924375
+"2031","Increasing","Congruent","Himba Adults 2022",0.4145033,0.333333333333333,0.62175495
+"2031","Increasing","Incongruent","Himba Adults 2022",0.4460635,0.333333333333333,0.66909525
+"2032","Decreasing","Congruent","Himba Adults 2022",0.5878921,0.333333333333333,0.88183815
+"2032","Decreasing","Incongruent","Himba Adults 2022",0.6026354,0.333333333333333,0.9039531
+"2032","Increasing","Congruent","Himba Adults 2022",0.526837090909091,0.266666666666667,0.718414214876033
+"2032","Increasing","Incongruent","Himba Adults 2022",0.54946,0.333333333333333,0.82419
+"2034","Decreasing","Congruent","Himba Adults 2022",0.6495659,0.333333333333333,0.97434885
+"2034","Decreasing","Incongruent","Himba Adults 2022",0.7743914,0.333333333333333,1.1615871
+"2034","Increasing","Congruent","Himba Adults 2022",0.4862814,0.333333333333333,0.7294221
+"2034","Increasing","Incongruent","Himba Adults 2022",0.5144126,0.333333333333333,0.7716189
+"2035","Decreasing","Congruent","Himba Adults 2022",0.561729933333333,0,0.561729933333333
+"2035","Decreasing","Incongruent","Himba Adults 2022",0.516155933333333,0,0.516155933333333
+"2035","Increasing","Congruent","Himba Adults 2022",0.798079,0.266666666666667,1.08828954545455
+"2035","Increasing","Incongruent","Himba Adults 2022",0.738375666666667,0.4,1.23062611111111
+"2038","Decreasing","Congruent","Himba Adults 2022",0.6327785,0.0666666666666667,0.677976964285714
+"2038","Decreasing","Incongruent","Himba Adults 2022",0.676329,0.133333333333333,0.780379615384615
+"2038","Increasing","Congruent","Himba Adults 2022",0.5778814,0.333333333333333,0.8668221
+"2038","Increasing","Incongruent","Himba Adults 2022",0.6462459,0.333333333333333,0.96936885
+"2040","Decreasing","Congruent","Himba Adults 2022",0.485813909090909,0.266666666666667,0.662473512396694
+"2040","Decreasing","Incongruent","Himba Adults 2022",0.470737090909091,0.266666666666667,0.641914214876033
+"2040","Increasing","Congruent","Himba Adults 2022",0.4811441,0.333333333333333,0.72171615
+"2040","Increasing","Incongruent","Himba Adults 2022",0.4660186,0.333333333333333,0.6990279
+"2041","Decreasing","Congruent","Himba Adults 2022",0.481901,0.0666666666666667,0.5163225
+"2041","Decreasing","Incongruent","Himba Adults 2022",0.476315384615385,0.133333333333333,0.549594674556213
+"2041","Increasing","Congruent","Himba Adults 2022",0.4209014,0.333333333333333,0.6313521
+"2041","Increasing","Incongruent","Himba Adults 2022",0.4179153,0.333333333333333,0.62687295
+"2045","Decreasing","Congruent","Himba Adults 2022",0.5112588,0.333333333333333,0.7668882
+"2045","Decreasing","Incongruent","Himba Adults 2022",0.524479,0.333333333333333,0.7867185
+"2045","Increasing","Congruent","Himba Adults 2022",0.5243823,0.333333333333333,0.78657345
+"2045","Increasing","Incongruent","Himba Adults 2022",0.5129044,0.333333333333333,0.7693566
+"2046","Decreasing","Congruent","Himba Adults 2022",0.608626909090909,0.266666666666667,0.829945785123967
+"2046","Decreasing","Incongruent","Himba Adults 2022",0.663091363636364,0.266666666666667,0.904215495867769
+"2046","Increasing","Congruent","Himba Adults 2022",0.860492888888889,0.4,1.43415481481481
+"2046","Increasing","Incongruent","Himba Adults 2022",1.057906125,0.466666666666667,1.983573984375
+"2049","Decreasing","Congruent","Himba Adults 2022",0.570769545454546,0.266666666666667,0.778322107438017
+"2049","Decreasing","Incongruent","Himba Adults 2022",0.608655818181818,0.266666666666667,0.82998520661157
+"2049","Increasing","Congruent","Himba Adults 2022",0.5129047,0.333333333333333,0.76935705
+"2049","Increasing","Incongruent","Himba Adults 2022",0.5529431,0.333333333333333,0.82941465
+"2050","Decreasing","Congruent","Himba Adults 2022",0.499641909090909,0.266666666666667,0.681329876033058
+"2050","Decreasing","Incongruent","Himba Adults 2022",0.5195577,0.333333333333333,0.77933655
+"2050","Increasing","Congruent","Himba Adults 2022",0.722592769230769,0.133333333333333,0.833760887573964
+"2050","Increasing","Incongruent","Himba Adults 2022",0.563693846153846,0.133333333333333,0.650415976331361
+"2053","Decreasing","Congruent","Himba Adults 2022",0.595592047619048,0.3,0.850845782312925
+"2053","Decreasing","Incongruent","Himba Adults 2022",0.589274714285714,0.3,0.841821020408163
+"2053","Increasing","Congruent","Himba Adults 2022",0.55042105,0.333333333333333,0.825631575
+"2053","Increasing","Incongruent","Himba Adults 2022",0.52708245,0.333333333333333,0.790623675
+"2056","Decreasing","Congruent","Himba Adults 2022",0.7064355,0.2,0.883044375
+"2056","Decreasing","Incongruent","Himba Adults 2022",0.589535166666667,0.2,0.736918958333333
+"2056","Increasing","Congruent","Himba Adults 2022",0.5140887,0.333333333333333,0.77113305
+"2056","Increasing","Incongruent","Himba Adults 2022",0.5374111,0.333333333333333,0.80611665
+"2057","Decreasing","Congruent","Himba Adults 2022",0.657602571428571,0.0666666666666667,0.704574183673469
+"2057","Decreasing","Incongruent","Himba Adults 2022",0.736120466666667,0,0.736120466666667
+"2057","Increasing","Congruent","Himba Adults 2022",0.5837462,0,0.5837462
+"2057","Increasing","Incongruent","Himba Adults 2022",0.4962258,0,0.4962258
+"2058","Decreasing","Congruent","Himba Adults 2022",0.915364448275862,0.0333333333333333,0.946928739595719
+"2058","Decreasing","Incongruent","Himba Adults 2022",0.814402928571429,0.0666666666666667,0.872574566326531
+"2058","Increasing","Congruent","Himba Adults 2022",1.00718873333333,0,1.00718873333333
+"2058","Increasing","Incongruent","Himba Adults 2022",1.06715207142857,0.0666666666666667,1.14337721938775
+"2059","Decreasing","Congruent","Himba Adults 2022",0.657264533333333,0,0.657264533333333
+"2059","Decreasing","Incongruent","Himba Adults 2022",0.661707133333333,0,0.661707133333333
+"2059","Increasing","Congruent","Himba Adults 2022",0.805800230769231,0.133333333333333,0.92976949704142
+"2059","Increasing","Incongruent","Himba Adults 2022",0.7929162,0,0.7929162
+"2060","Decreasing","Congruent","Himba Adults 2022",0.5738618,0,0.5738618
+"2060","Decreasing","Incongruent","Himba Adults 2022",0.511631666666667,0,0.511631666666667
+"2060","Increasing","Congruent","Himba Adults 2022",0.464884363636364,0.266666666666667,0.633933223140496
+"2060","Increasing","Incongruent","Himba Adults 2022",0.478405090909091,0.266666666666667,0.652370578512397
+"2061","Decreasing","Congruent","Himba Adults 2022",1.18562736363636,0.266666666666667,1.61676458677686
+"2061","Decreasing","Incongruent","Himba Adults 2022",0.991820090909091,0.266666666666667,1.35248194214876
+"2061","Increasing","Congruent","Himba Adults 2022",1.1217338,0,1.1217338
+"2061","Increasing","Incongruent","Himba Adults 2022",1.03773807692308,0.133333333333333,1.1973900887574
+"2062","Decreasing","Congruent","Himba Adults 2022",0.7792665,0.0666666666666667,0.834928392857143
+"2062","Decreasing","Incongruent","Himba Adults 2022",0.667590461538462,0.133333333333333,0.770296686390533
+"2062","Increasing","Congruent","Himba Adults 2022",0.5177672,0.333333333333333,0.7766508
+"2062","Increasing","Incongruent","Himba Adults 2022",0.5111738,0.333333333333333,0.7667607
+"2063","Decreasing","Congruent","Himba Adults 2022",0.528024071428571,0.0666666666666667,0.565740076530612
+"2063","Decreasing","Incongruent","Himba Adults 2022",0.716211928571429,0.0666666666666667,0.767369923469388
+"2063","Increasing","Congruent","Himba Adults 2022",0.885184285714286,0.0666666666666667,0.948411734693878
+"2063","Increasing","Incongruent","Himba Adults 2022",0.587331533333333,0,0.587331533333333
+"2064","Decreasing","Congruent","Himba Adults 2022",0.432774,0,0.432774
+"2064","Decreasing","Incongruent","Himba Adults 2022",0.613963933333333,0,0.613963933333333
+"2064","Increasing","Congruent","Himba Adults 2022",0.5830208,0,0.5830208
+"2064","Increasing","Incongruent","Himba Adults 2022",0.558421866666667,0,0.558421866666667
+"2065","Decreasing","Congruent","Himba Adults 2022",0.662891,0.333333333333333,0.9943365
+"2065","Decreasing","Incongruent","Himba Adults 2022",0.6027656,0.333333333333333,0.9041484
+"2065","Increasing","Congruent","Himba Adults 2022",0.651687666666667,0,0.651687666666667
+"2065","Increasing","Incongruent","Himba Adults 2022",0.710952615384615,0.133333333333333,0.820329940828402
+"2066","Decreasing","Congruent","Himba Adults 2022",0.7161217,0.333333333333333,1.07418255
+"2066","Decreasing","Incongruent","Himba Adults 2022",0.8558667,0.333333333333333,1.28380005
+"2066","Increasing","Congruent","Himba Adults 2022",0.628074727272727,0.266666666666667,0.856465537190083
+"2066","Increasing","Incongruent","Himba Adults 2022",0.6212032,0.333333333333333,0.9318048
+"2068","Decreasing","Congruent","Himba Adults 2022",0.640401636363636,0.266666666666667,0.873274958677686
+"2068","Decreasing","Incongruent","Himba Adults 2022",0.6996629,0.333333333333333,1.04949435
+"2068","Increasing","Congruent","Himba Adults 2022",0.759607230769231,0.133333333333333,0.876469881656805
+"2068","Increasing","Incongruent","Himba Adults 2022",0.923920153846154,0.133333333333333,1.06606171597633
+"2069","Decreasing","Congruent","Himba Adults 2022",0.6561556,0,0.6561556
+"2069","Decreasing","Incongruent","Himba Adults 2022",0.697274466666667,0,0.697274466666667
+"2069","Increasing","Congruent","Himba Adults 2022",0.7827486,0,0.7827486
+"2069","Increasing","Incongruent","Himba Adults 2022",0.890461769230769,0.133333333333333,1.02745588757396
+"2070","Decreasing","Congruent","Himba Adults 2022",1.16088507692308,0.133333333333333,1.33948278106509
+"2070","Decreasing","Incongruent","Himba Adults 2022",0.878970153846154,0.133333333333333,1.01419633136095
+"2070","Increasing","Congruent","Himba Adults 2022",0.610494133333333,0,0.610494133333333
+"2070","Increasing","Incongruent","Himba Adults 2022",0.594951642857143,0.0666666666666667,0.63744818877551
+"2071","Decreasing","Congruent","Himba Adults 2022",0.567409,0,0.567409
+"2071","Decreasing","Incongruent","Himba Adults 2022",0.5484488,0,0.5484488
+"2071","Increasing","Congruent","Himba Adults 2022",0.4585184,0,0.4585184
+"2071","Increasing","Incongruent","Himba Adults 2022",0.459545866666667,0,0.459545866666667
+"2072","Decreasing","Congruent","Himba Adults 2022",0.640618666666667,0,0.640618666666667
+"2072","Decreasing","Incongruent","Himba Adults 2022",0.719353727272727,0.266666666666667,0.980936900826446
+"2072","Increasing","Congruent","Himba Adults 2022",0.670590333333333,0,0.670590333333333
+"2072","Increasing","Incongruent","Himba Adults 2022",0.5350162,0,0.5350162
+"2073","Decreasing","Congruent","Himba Adults 2022",0.760200818181818,0.266666666666667,1.03663747933884
+"2073","Decreasing","Incongruent","Himba Adults 2022",0.6627028,0.333333333333333,0.9940542
+"2073","Increasing","Congruent","Himba Adults 2022",0.796853923076923,0.133333333333333,0.919446834319527
+"2073","Increasing","Incongruent","Himba Adults 2022",0.949424266666667,0,0.949424266666667
+"2074","Decreasing","Congruent","Himba Adults 2022",0.600539533333333,0,0.600539533333333
+"2074","Decreasing","Incongruent","Himba Adults 2022",0.587264,0,0.587264
+"2074","Increasing","Congruent","Himba Adults 2022",0.8960564,0,0.8960564
+"2074","Increasing","Incongruent","Himba Adults 2022",0.797086133333333,0,0.797086133333333
+"2076","Decreasing","Congruent","Himba Adults 2022",1.25884164285714,0.0666666666666667,1.34875890306122
+"2076","Decreasing","Incongruent","Himba Adults 2022",1.18262926666667,0,1.18262926666667
+"2076","Increasing","Congruent","Himba Adults 2022",0.881395384615385,0.133333333333333,1.01699467455621
+"2076","Increasing","Incongruent","Himba Adults 2022",1.089474,0,1.089474
+"2077","Decreasing","Congruent","Himba Adults 2022",0.433991866666667,0,0.433991866666667
+"2077","Decreasing","Incongruent","Himba Adults 2022",0.479555466666667,0,0.479555466666667
+"2077","Increasing","Congruent","Himba Adults 2022",0.461792533333333,0,0.461792533333333
+"2077","Increasing","Incongruent","Himba Adults 2022",0.492948533333333,0,0.492948533333333
+"2078","Decreasing","Congruent","Himba Adults 2022",0.799473285714286,0.0666666666666667,0.856578520408163
+"2078","Decreasing","Incongruent","Himba Adults 2022",0.916238357142857,0.0666666666666667,0.981683954081633
+"2078","Increasing","Congruent","Himba Adults 2022",0.759466733333333,0,0.759466733333333
+"2078","Increasing","Incongruent","Himba Adults 2022",0.594986066666667,0,0.594986066666667
+"2079","Decreasing","Congruent","Himba Adults 2022",0.4139028,0,0.4139028
+"2079","Decreasing","Incongruent","Himba Adults 2022",0.3862034,0,0.3862034
+"2079","Increasing","Congruent","Himba Adults 2022",0.465057266666667,0,0.465057266666667
+"2079","Increasing","Incongruent","Himba Adults 2022",0.391831666666667,0,0.391831666666667
+"2081","Decreasing","Congruent","Himba Adults 2022",0.6573768,0,0.6573768
+"2081","Decreasing","Incongruent","Himba Adults 2022",0.653893333333333,0,0.653893333333333
+"2081","Increasing","Congruent","Himba Adults 2022",0.5785414,0,0.5785414
+"2081","Increasing","Incongruent","Himba Adults 2022",0.6095578,0,0.6095578
+"2082","Decreasing","Congruent","Himba Adults 2022",0.440386818181818,0.266666666666667,0.600527479338843
+"2082","Decreasing","Incongruent","Himba Adults 2022",0.449577,0.333333333333333,0.6743655
+"2082","Increasing","Congruent","Himba Adults 2022",0.555133916666667,0.2,0.693917395833333
+"2082","Increasing","Incongruent","Himba Adults 2022",0.487415818181818,0.266666666666667,0.664657933884298
+"2083","Decreasing","Congruent","Himba Adults 2022",0.643853166666667,0.2,0.804816458333333
+"2083","Decreasing","Incongruent","Himba Adults 2022",0.826379230769231,0.133333333333333,0.95351449704142
+"2083","Increasing","Congruent","Himba Adults 2022",0.529204785714286,0.0666666666666667,0.56700512755102
+"2083","Increasing","Incongruent","Himba Adults 2022",0.490777266666667,0,0.490777266666667
+"2084","Decreasing","Congruent","Himba Adults 2022",0.467295214285714,0.0666666666666667,0.500673443877551
+"2084","Decreasing","Incongruent","Himba Adults 2022",0.469744714285714,0.0666666666666667,0.503297908163265
+"2084","Increasing","Congruent","Himba Adults 2022",0.566311363636364,0.266666666666667,0.772242768595041
+"2084","Increasing","Incongruent","Himba Adults 2022",0.656987545454546,0.266666666666667,0.895892107438017
+"2085","Decreasing","Congruent","Himba Adults 2022",0.561709666666667,0,0.561709666666667
+"2085","Decreasing","Incongruent","Himba Adults 2022",0.771648133333333,0,0.771648133333333
+"2085","Increasing","Congruent","Himba Adults 2022",0.565003866666667,0,0.565003866666667
+"2085","Increasing","Incongruent","Himba Adults 2022",0.432823066666667,0,0.432823066666667
+"2086","Decreasing","Congruent","Himba Adults 2022",0.6240228,0,0.6240228
+"2086","Decreasing","Incongruent","Himba Adults 2022",0.604335428571429,0.0666666666666667,0.647502244897959
+"2086","Increasing","Congruent","Himba Adults 2022",0.669797428571429,0.0666666666666667,0.717640102040816
+"2086","Increasing","Incongruent","Himba Adults 2022",0.630419285714286,0.0666666666666667,0.675449234693878
+"2087","Decreasing","Congruent","Himba Adults 2022",0.6217378,0,0.6217378
+"2087","Decreasing","Incongruent","Himba Adults 2022",0.660499,0,0.660499
+"2087","Increasing","Congruent","Himba Adults 2022",0.7477942,0.333333333333333,1.1216913
+"2087","Increasing","Incongruent","Himba Adults 2022",0.7228027,0.333333333333333,1.08420405
+"2088","Decreasing","Congruent","Himba Adults 2022",0.884422,0.333333333333333,1.326633
+"2088","Decreasing","Incongruent","Himba Adults 2022",0.857629375,0.466666666666667,1.608055078125
+"2088","Increasing","Congruent","Himba Adults 2022",0.820636333333333,0,0.820636333333333
+"2088","Increasing","Incongruent","Himba Adults 2022",0.743959133333333,0,0.743959133333333
+"2089","Decreasing","Congruent","Himba Adults 2022",0.776831071428571,0.0666666666666667,0.832319005102041
+"2089","Decreasing","Incongruent","Himba Adults 2022",0.7373056,0,0.7373056
+"2089","Increasing","Congruent","Himba Adults 2022",0.728179571428571,0.0666666666666667,0.780192397959184
+"2089","Increasing","Incongruent","Himba Adults 2022",0.8106438,0,0.8106438
+"2090","Decreasing","Congruent","Himba Adults 2022",0.546818538461538,0.133333333333333,0.630944467455621
+"2090","Decreasing","Incongruent","Himba Adults 2022",0.613699461538462,0.133333333333333,0.708114763313609
+"2090","Increasing","Congruent","Himba Adults 2022",1.09231535714286,0.0666666666666667,1.17033788265306
+"2090","Increasing","Incongruent","Himba Adults 2022",0.778497166666667,0.2,0.973121458333333
+"2091","Decreasing","Congruent","Himba Adults 2022",0.525840928571429,0.0666666666666667,0.563400994897959
+"2091","Decreasing","Incongruent","Himba Adults 2022",0.737960846153846,0.133333333333333,0.851493284023669
+"2091","Increasing","Congruent","Himba Adults 2022",0.617583,0.2,0.77197875
+"2091","Increasing","Incongruent","Himba Adults 2022",0.779810083333333,0.2,0.974762604166667
+"2095","Decreasing","Congruent","Himba Adults 2022",0.455481642857143,0.0666666666666667,0.488016045918367
+"2095","Decreasing","Incongruent","Himba Adults 2022",0.487944461538462,0.133333333333333,0.563012840236686
+"2095","Increasing","Congruent","Himba Adults 2022",0.472787933333333,0,0.472787933333333
+"2095","Increasing","Incongruent","Himba Adults 2022",0.4964102,0,0.4964102
+"2097","Decreasing","Congruent","Himba Adults 2022",0.5607296,0,0.5607296
+"2097","Decreasing","Incongruent","Himba Adults 2022",0.513390923076923,0.133333333333333,0.592374142011834
+"2097","Increasing","Congruent","Himba Adults 2022",0.5385044,0,0.5385044
+"2097","Increasing","Incongruent","Himba Adults 2022",0.505123133333333,0,0.505123133333333
+"2098","Decreasing","Congruent","Himba Adults 2022",0.4936505,0.0666666666666667,0.52891125
+"2098","Decreasing","Incongruent","Himba Adults 2022",0.641713133333333,0,0.641713133333333
+"2098","Increasing","Congruent","Himba Adults 2022",0.5573824,0,0.5573824
+"2098","Increasing","Incongruent","Himba Adults 2022",0.4684238,0,0.4684238
+"2099","Decreasing","Congruent","Himba Adults 2022",0.406608285714286,0.0666666666666667,0.435651734693878
+"2099","Decreasing","Incongruent","Himba Adults 2022",0.420852571428571,0.0666666666666667,0.450913469387755
+"2099","Increasing","Congruent","Himba Adults 2022",0.501902857142857,0.0666666666666667,0.53775306122449
+"2099","Increasing","Incongruent","Himba Adults 2022",0.457411866666667,0,0.457411866666667
+"21","Decreasing","Congruent","Italian Adults",0.5035704,0,0.5035704
+"21","Decreasing","Incongruent","Italian Adults",0.523750466666667,0,0.523750466666667
+"21","Increasing","Congruent","Italian Adults",0.366118133333333,0,0.366118133333333
+"21","Increasing","Incongruent","Italian Adults",0.377263333333333,0,0.377263333333333
+"2107","Decreasing","Congruent","Himba Adults 2022",0.419664466666667,0,0.419664466666667
+"2107","Decreasing","Incongruent","Himba Adults 2022",0.506390733333333,0,0.506390733333333
+"2107","Increasing","Congruent","Himba Adults 2022",0.9094468,0,0.9094468
+"2107","Increasing","Incongruent","Himba Adults 2022",0.743862533333333,0,0.743862533333333
+"2108","Decreasing","Congruent","Himba Adults 2022",0.477398133333333,0,0.477398133333333
+"2108","Decreasing","Incongruent","Himba Adults 2022",0.480529066666667,0,0.480529066666667
+"2108","Increasing","Congruent","Himba Adults 2022",0.5539512,0,0.5539512
+"2108","Increasing","Incongruent","Himba Adults 2022",0.5339654,0,0.5339654
+"2110","Decreasing","Congruent","Himba Adults 2022",0.861894,0,0.861894
+"2110","Decreasing","Incongruent","Himba Adults 2022",0.853936733333333,0,0.853936733333333
+"2110","Increasing","Congruent","Himba Adults 2022",0.949409916666667,0.2,1.18676239583333
+"2110","Increasing","Incongruent","Himba Adults 2022",0.799469785714286,0.0666666666666667,0.856574770408163
+"2112","Decreasing","Congruent","Himba Adults 2022",1.146471,0.266666666666667,1.56336954545455
+"2112","Decreasing","Incongruent","Himba Adults 2022",0.79115625,0.2,0.9889453125
+"2112","Increasing","Congruent","Himba Adults 2022",0.5683854,0,0.5683854
+"2112","Increasing","Incongruent","Himba Adults 2022",0.580649733333333,0,0.580649733333333
+"2114","Decreasing","Congruent","Himba Adults 2022",0.684172615384615,0.133333333333333,0.789429940828402
+"2114","Decreasing","Incongruent","Himba Adults 2022",0.668689571428571,0.0666666666666667,0.716453112244898
+"2114","Increasing","Congruent","Himba Adults 2022",0.6958725,0.0666666666666667,0.745577678571429
+"2114","Increasing","Incongruent","Himba Adults 2022",0.480251307692308,0.133333333333333,0.554136124260355
+"2115","Decreasing","Congruent","Himba Adults 2022",0.68155,0.133333333333333,0.786403846153846
+"2115","Decreasing","Incongruent","Himba Adults 2022",0.524998,0,0.524998
+"2115","Increasing","Congruent","Himba Adults 2022",0.404119909090909,0.266666666666667,0.551072603305785
+"2115","Increasing","Incongruent","Himba Adults 2022",0.3828742,0.333333333333333,0.5743113
+"2116","Decreasing","Congruent","Himba Adults 2022",0.7005726,0,0.7005726
+"2116","Decreasing","Incongruent","Himba Adults 2022",0.695161133333333,0,0.695161133333333
+"2116","Increasing","Congruent","Himba Adults 2022",0.9177552,0.333333333333333,1.3766328
+"2116","Increasing","Incongruent","Himba Adults 2022",0.8561568,0.333333333333333,1.2842352
+"2119","Decreasing","Congruent","Himba Adults 2022",1.1084456,0,1.1084456
+"2119","Decreasing","Incongruent","Himba Adults 2022",0.801573933333333,0,0.801573933333333
+"2119","Increasing","Congruent","Himba Adults 2022",0.568337066666667,0,0.568337066666667
+"2119","Increasing","Incongruent","Himba Adults 2022",0.410736266666667,0,0.410736266666667
+"2120","Decreasing","Congruent","Himba Adults 2022",0.734118071428571,0.0666666666666667,0.786555076530612
+"2120","Decreasing","Incongruent","Himba Adults 2022",0.873133285714286,0.0666666666666667,0.935499948979592
+"2120","Increasing","Congruent","Himba Adults 2022",0.545860928571429,0.0666666666666667,0.584850994897959
+"2120","Increasing","Incongruent","Himba Adults 2022",0.645053266666667,0,0.645053266666667
+"2122","Decreasing","Congruent","Himba Adults 2022",0.5844232,0.333333333333333,0.8766348
+"2122","Decreasing","Incongruent","Himba Adults 2022",0.5711803,0.333333333333333,0.85677045
+"2122","Increasing","Congruent","Himba Adults 2022",0.729541533333333,0,0.729541533333333
+"2122","Increasing","Incongruent","Himba Adults 2022",0.449453733333333,0,0.449453733333333
+"22","Decreasing","Congruent","Italian Adults",0.382244466666667,0,0.382244466666667
+"22","Decreasing","Incongruent","Italian Adults",0.404716466666667,0,0.404716466666667
+"22","Increasing","Congruent","Italian Adults",0.366005533333333,0,0.366005533333333
+"22","Increasing","Incongruent","Italian Adults",0.400312866666667,0,0.400312866666667
+"24","Decreasing","Congruent","Italian Adults",0.345344333333333,0,0.345344333333333
+"24","Decreasing","Incongruent","Italian Adults",0.381180066666667,0,0.381180066666667
+"24","Increasing","Congruent","Italian Adults",0.369344866666667,0,0.369344866666667
+"24","Increasing","Incongruent","Italian Adults",0.447091933333333,0,0.447091933333333
+"26","Decreasing","Congruent","Italian Adults",0.5695392,0,0.5695392
+"26","Decreasing","Incongruent","Italian Adults",0.589891571428571,0.0666666666666667,0.632026683673469
+"26","Increasing","Congruent","Italian Adults",0.533890933333333,0,0.533890933333333
+"26","Increasing","Incongruent","Italian Adults",0.469484066666667,0,0.469484066666667
+"27","Decreasing","Congruent","Italian Adults",0.5640016,0,0.5640016
+"27","Decreasing","Incongruent","Italian Adults",0.569302,0,0.569302
+"27","Increasing","Congruent","Italian Adults",0.470603266666667,0,0.470603266666667
+"27","Increasing","Incongruent","Italian Adults",0.4771254,0,0.4771254
+"28","Decreasing","Congruent","Italian Adults",0.442701866666667,0,0.442701866666667
+"28","Decreasing","Incongruent","Italian Adults",0.456106933333333,0,0.456106933333333
+"28","Increasing","Congruent","Italian Adults",0.467004333333333,0,0.467004333333333
+"28","Increasing","Incongruent","Italian Adults",0.5204434,0,0.5204434
+"29","Decreasing","Congruent","Italian Adults",0.5205114,0,0.5205114
+"29","Decreasing","Incongruent","Italian Adults",0.4428128,0,0.4428128
+"29","Increasing","Congruent","Italian Adults",0.471855066666667,0,0.471855066666667
+"29","Increasing","Incongruent","Italian Adults",0.456451666666667,0,0.456451666666667
+"30","Decreasing","Congruent","Italian Adults",0.3129308,0,0.3129308
+"30","Decreasing","Incongruent","Italian Adults",0.3372528,0,0.3372528
+"30","Increasing","Congruent","Italian Adults",0.252568,0,0.252568
+"30","Increasing","Incongruent","Italian Adults",0.324947466666667,0,0.324947466666667
+"31","Decreasing","Congruent","Italian Adults",0.5827608,0,0.5827608
+"31","Decreasing","Incongruent","Italian Adults",0.639340733333333,0,0.639340733333333
+"31","Increasing","Congruent","Italian Adults",0.494957733333333,0,0.494957733333333
+"31","Increasing","Incongruent","Italian Adults",0.540575266666667,0,0.540575266666667
+"32","Decreasing","Congruent","Italian Adults",0.410408866666667,0,0.410408866666667
+"32","Decreasing","Incongruent","Italian Adults",0.434743333333333,0,0.434743333333333
+"32","Increasing","Congruent","Italian Adults",0.398292733333333,0,0.398292733333333
+"32","Increasing","Incongruent","Italian Adults",0.403837133333333,0,0.403837133333333
+"33","Decreasing","Congruent","Italian Adults",0.689145066666667,0,0.689145066666667
+"33","Decreasing","Incongruent","Italian Adults",0.766074266666667,0,0.766074266666667
+"33","Increasing","Congruent","Italian Adults",0.635880666666667,0,0.635880666666667
+"33","Increasing","Incongruent","Italian Adults",0.730208733333333,0,0.730208733333333
+"34","Decreasing","Congruent","Italian Adults",0.371740933333333,0,0.371740933333333
+"34","Decreasing","Incongruent","Italian Adults",0.404909266666667,0,0.404909266666667
+"34","Increasing","Congruent","Italian Adults",0.420363733333333,0,0.420363733333333
+"34","Increasing","Incongruent","Italian Adults",0.375146533333333,0,0.375146533333333
+"35","Decreasing","Congruent","Italian Adults",0.518398466666667,0,0.518398466666667
+"35","Decreasing","Incongruent","Italian Adults",0.5824082,0,0.5824082
+"35","Increasing","Congruent","Italian Adults",0.336279533333333,0,0.336279533333333
+"35","Increasing","Incongruent","Italian Adults",0.341497466666667,0,0.341497466666667
+"36","Decreasing","Congruent","Italian Adults",0.298351866666667,0,0.298351866666667
+"36","Decreasing","Incongruent","Italian Adults",0.319280866666667,0,0.319280866666667
+"36","Increasing","Congruent","Italian Adults",0.350528533333333,0,0.350528533333333
+"36","Increasing","Incongruent","Italian Adults",0.387352266666667,0,0.387352266666667
+"37","Decreasing","Congruent","Italian Adults",0.425892,0,0.425892
+"37","Decreasing","Incongruent","Italian Adults",0.4593526,0,0.4593526
+"37","Increasing","Congruent","Italian Adults",0.381495571428571,0.0666666666666667,0.408745255102041
+"37","Increasing","Incongruent","Italian Adults",0.374941866666667,0,0.374941866666667
+"38","Decreasing","Congruent","Italian Adults",0.476979,0,0.476979
+"38","Decreasing","Incongruent","Italian Adults",0.539358,0,0.539358
+"38","Increasing","Congruent","Italian Adults",0.421455266666667,0,0.421455266666667
+"38","Increasing","Incongruent","Italian Adults",0.446139866666667,0,0.446139866666667
+"39","Decreasing","Congruent","Italian Adults",0.368129133333333,0,0.368129133333333
+"39","Decreasing","Incongruent","Italian Adults",0.402421733333333,0,0.402421733333333
+"39","Increasing","Congruent","Italian Adults",0.385902866666667,0,0.385902866666667
+"39","Increasing","Incongruent","Italian Adults",0.362541133333333,0,0.362541133333333
+"40","Decreasing","Congruent","Italian Adults",0.4102612,0,0.4102612
+"40","Decreasing","Incongruent","Italian Adults",0.4012944,0,0.4012944
+"40","Increasing","Congruent","Italian Adults",0.386106066666667,0,0.386106066666667
+"40","Increasing","Incongruent","Italian Adults",0.360260733333333,0,0.360260733333333
+"41","Decreasing","Congruent","Italian Adults",0.4595484,0,0.4595484
+"41","Decreasing","Incongruent","Italian Adults",0.424101133333333,0,0.424101133333333
+"41","Increasing","Congruent","Italian Adults",0.527623266666667,0,0.527623266666667
+"41","Increasing","Incongruent","Italian Adults",0.5135432,0,0.5135432
+"42","Decreasing","Congruent","Italian Adults",0.5692212,0,0.5692212
+"42","Decreasing","Incongruent","Italian Adults",0.568226533333333,0,0.568226533333333
+"42","Increasing","Congruent","Italian Adults",0.563847333333333,0,0.563847333333333
+"42","Increasing","Incongruent","Italian Adults",0.5670526,0,0.5670526
+"43","Decreasing","Congruent","Italian Adults",0.393948466666667,0,0.393948466666667
+"43","Decreasing","Incongruent","Italian Adults",0.382524266666667,0,0.382524266666667
+"43","Increasing","Congruent","Italian Adults",0.41725,0,0.41725
+"43","Increasing","Incongruent","Italian Adults",0.371577133333333,0,0.371577133333333
+"44","Decreasing","Congruent","Italian Adults",0.411787,0,0.411787
+"44","Decreasing","Incongruent","Italian Adults",0.432884866666667,0,0.432884866666667
+"44","Increasing","Congruent","Italian Adults",0.415764866666667,0,0.415764866666667
+"44","Increasing","Incongruent","Italian Adults",0.366090866666667,0,0.366090866666667
+"45","Decreasing","Congruent","Italian Adults",0.373894133333333,0,0.373894133333333
+"45","Decreasing","Incongruent","Italian Adults",0.3660688,0,0.3660688
+"45","Increasing","Congruent","Italian Adults",0.3491712,0,0.3491712
+"45","Increasing","Incongruent","Italian Adults",0.357018133333333,0,0.357018133333333
+"46","Decreasing","Congruent","Italian Adults",0.280500333333333,0,0.280500333333333
+"46","Decreasing","Incongruent","Italian Adults",0.282691333333333,0,0.282691333333333
+"46","Increasing","Congruent","Italian Adults",0.345893066666667,0,0.345893066666667
+"46","Increasing","Incongruent","Italian Adults",0.369391666666667,0,0.369391666666667
+"47","Decreasing","Congruent","Italian Adults",0.356175266666667,0,0.356175266666667
+"47","Decreasing","Incongruent","Italian Adults",0.357005933333333,0,0.357005933333333
+"47","Increasing","Congruent","Italian Adults",0.280618266666667,0,0.280618266666667
+"47","Increasing","Incongruent","Italian Adults",0.269129333333333,0,0.269129333333333
+"48","Decreasing","Congruent","Italian Adults",0.495687466666667,0,0.495687466666667
+"48","Decreasing","Incongruent","Italian Adults",0.543630933333333,0,0.543630933333333
+"48","Increasing","Congruent","Italian Adults",0.4523766,0,0.4523766
+"48","Increasing","Incongruent","Italian Adults",0.352353266666667,0,0.352353266666667
+"49","Decreasing","Congruent","Italian Adults",0.5226118,0,0.5226118
+"49","Decreasing","Incongruent","Italian Adults",0.538088,0,0.538088
+"49","Increasing","Congruent","Italian Adults",0.447142666666667,0,0.447142666666667
+"49","Increasing","Incongruent","Italian Adults",0.5113324,0,0.5113324
+"50","Decreasing","Congruent","Italian Adults",0.3177494,0,0.3177494
+"50","Decreasing","Incongruent","Italian Adults",0.3704284,0,0.3704284
+"50","Increasing","Congruent","Italian Adults",0.356072333333333,0,0.356072333333333
+"50","Increasing","Incongruent","Italian Adults",0.347242266666667,0,0.347242266666667
+"51","Decreasing","Congruent","Italian Adults",0.500550466666667,0,0.500550466666667
+"51","Decreasing","Incongruent","Italian Adults",0.720194666666667,0,0.720194666666667
+"51","Increasing","Congruent","Italian Adults",0.313798533333333,0,0.313798533333333
+"51","Increasing","Incongruent","Italian Adults",0.303127857142857,0.0666666666666667,0.324779846938776
+"52","Decreasing","Congruent","Italian Adults",0.511371,0,0.511371
+"52","Decreasing","Incongruent","Italian Adults",0.478186133333333,0,0.478186133333333
+"52","Increasing","Congruent","Italian Adults",0.549393466666667,0,0.549393466666667
+"52","Increasing","Incongruent","Italian Adults",0.5492306,0,0.5492306
+"53","Decreasing","Congruent","Italian Adults",0.379037866666667,0,0.379037866666667
+"53","Decreasing","Incongruent","Italian Adults",0.422686666666667,0,0.422686666666667
+"53","Increasing","Congruent","Italian Adults",0.3783704,0,0.3783704
+"53","Increasing","Incongruent","Italian Adults",0.364702866666667,0,0.364702866666667
