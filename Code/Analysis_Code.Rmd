@@ -66,15 +66,15 @@ se <- function(x) sd(x, na.rm = TRUE)/sqrt(length2(x))
 ```{r Load Data}
 
 
-Ordering_Cards_Task <- read_csv("./Ordering_Cards_Task.csv") # Data Experiment 1 - Ordering Cards Task
-Correlation_Score_Cards_Task <- read_delim("./Correlation_Score_Cards_Task.csv") # Data Experiment 1 - Ordering Cards Task (Distribution)
+Ordering_Cards_Task <- read_csv("./Data/Ordering_Cards_Task.csv") # Data Experiment 1 - Ordering Cards Task
+Correlation_Score_Cards_Task <- read_delim("./Data/Correlation_Score_Cards_Task.csv") # Data Experiment 1 - Ordering Cards Task (Distribution)
 
 
-Numerosity_Comparison_Task <- read_csv("./Numerosity_Comparison_Task.csv") # Data Experiment 2 - Numerosity Comparison Task
+Numerosity_Comparison_Task <- read_csv("./Data/Numerosity_Comparison_Task.csv") # Data Experiment 2 - Numerosity Comparison Task
 
 # load chance distribution generated for Experiment 1 analysis (see Generate_chanceDistribution files)
 # As the computation is quite time consuming we do not want to run that script every time
-load("./Permutation_Distr.Rdata") 
+load("./Data/Permutation_Distr.Rdata") 
 
 
 
@@ -421,7 +421,7 @@ Adults are different from Himba and preschooler, but preschooler and Himba are n
 
 Looking at the distribution of the inverse efficiency (with target stimuli and correct answer only):
 
-```{r , echo=F, message=F, warning=FALSE, fig.cap=capFig('Same plot as above, except that here the results for each participant is presented (point), with boxplot and violin plot.'), fig.height=11, fig.width=14}
+```{r , echo=F, message=F, warning=FALSE}
 
 pmean2 <- ggplot(data=Numerosity_Comparison_Task, aes(x=exp, y=invefi,  fill=condition))+
   geom_violin(alpha=0.2, position = position_dodge(1))+
@@ -443,7 +443,7 @@ pmean2
 ```
 
 Plotting mean values and Standard Error of the mean
-```{r , echo=F, message=F, warning=FALSE,  fig.height=9, fig.width=12}
+```{r , echo=F, message=F, warning=FALSE}
 
 # compute the average mean for each condition, position and situation
 Numerosity_Comparison_Task %>%
