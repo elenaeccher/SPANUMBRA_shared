@@ -59,54 +59,24 @@ length2 <- function (x, na.rm=FALSE) {
 se <- function(x) sd(x, na.rm = TRUE)/sqrt(length2(x))
 
 
-# Figure and Table caption adapted from https://stackoverflow.com/questions/37116632/rmarkdown-html-number-figures: 
-outputFormat = opts_knit$get("rmarkdown.pandoc.to"); # determine the output format of the document
-if( is.null(outputFormat) ) outputFormat = ""; # probably not run within knittr
-capTabNo = 1; capFigNo = 1; # figure and table caption numbering, for HTML do it manually
-#Function to add the Table Number
-capTab = function(x)
-{
-  if(outputFormat == 'html'){
-    x = paste0("**Table ",capTabNo,".** ",x,"")
-    capTabNo <<- capTabNo + 1
-  }; x
-}
-#Function to add the Figure Number
-capFig = function(x, show_R_version=TRUE, show_package_versions=NULL, is_map=FALSE)
-{
-  if(outputFormat == 'html')
-  {
-    x <- paste0("**Figure ",capFigNo,".** ",x,"");
-    if( show_R_version || (!is.null(show_package_versions) && length(show_package_versions) > 0) )
-    {
-      x <- paste0(x, " Figure generated using ");
-      if( show_R_version ) x <- paste0(x, stringr::str_replace(R.version.string, stringr::fixed("R "), "[`R`](https://www.r-project.org/) "));
-      if( !is.null(show_package_versions) && length(show_package_versions) > 0 )
-      {
-        x <- paste0(x, ifelse( show_R_version, " and ", " "));
-        x <- paste0(x, ifelse( length(show_package_versions) > 1, "packages ", "package "));
-        x <- paste0(x, paste0(vapply(show_package_versions, function(x) paste0("`",x,"`", " (version ", packageVersion(x),")"), character(1)), collapse=", "), ".");
-      }
-      if( is_map ) x <- paste0(x, " Maps are using public domain data from the [Natural Earth project](https://www.naturalearthdata.com/) as provided by the `R` package `maps`.");
-    }
-    capFigNo <<- capFigNo + 1;
-  }; 
-  x;
-}
-
-
 ```
 
 
 
 ```{r Load Data}
-Numerosity_Comparison_Task <- read_csv("./Numerosity_Comparison_Task.csv")
 
-Ordering_Cards_Task <- read_csv("./Ordering_Cards_Task.csv")
 
-Correlation_Score_Cards_Task <- read_delim("./Correlation_Score_Cards_Task.csv")
+Ordering_Cards_Task <- read_csv("./Ordering_Cards_Task.csv") # Data Experiment 1 - Ordering Cards Task
+Correlation_Score_Cards_Task <- read_delim("./Correlation_Score_Cards_Task.csv") # Data Experiment 1 - Ordering Cards Task (Distribution)
 
-load("./Permutation_Distr.Rdata")
+
+Numerosity_Comparison_Task <- read_csv("./Numerosity_Comparison_Task.csv") # Data Experiment 2 - Numerosity Comparison Task
+
+# load chance distribution generated for Experiment 1 analysis (see Generate_chanceDistribution files)
+# As the computation is quite time consuming we do not want to run that script every time
+load("./Permutation_Distr.Rdata") 
+
+
 
 ```
 
