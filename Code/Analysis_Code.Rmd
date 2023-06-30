@@ -296,9 +296,10 @@ p_adults <- ggplot() +
          axis.text.y = element_text(size = 10),
          legend.position = "bottom",
          plot.title = element_text(size = 14, face = "bold"))+ 
+     facet_grid(~ exp, scales = "free_x") +
   scale_fill_manual(values = c("gray", "red"))+
 scale_y_continuous( breaks = seq(0, 1, by = 0.2))+
-  labs(y = "Probability", x ="Rightward                                                            Leftward")
+  labs(y = "Probability", x ="  Rightward              Leftward")
 
 
 
@@ -319,8 +320,9 @@ p_himba_2021 <- ggplot() +
          axis.text.y = element_text(size = 10),
          legend.position = "none",
          plot.title = element_text(size = 14, face = "bold"))+ 
+       facet_grid(~ exp, scales = "free_x") +
   scale_fill_manual(values = c("gray", "red"))+
-  labs(y = "Probability", x ="Rightward                                                            Leftward")
+  labs(y = "Probability", x ="  Rightward              Leftward")
 
 
 
@@ -341,8 +343,9 @@ p_himba22 <- ggplot() +
          axis.text.y = element_text(size = 10),
          legend.position = "none",
          plot.title = element_text(size = 14, face = "bold"))+
+       facet_grid(~ exp, scales = "free_x") +
   scale_fill_manual(values = c("gray", "red"))+
-  labs(y = "Probability", x ="Rightward                                                            Leftward")
+  labs(y = "Probability", x ="  Rightward              Leftward")
 
 
 
@@ -363,8 +366,9 @@ p_pres <- ggplot() +
          axis.text.y = element_text(size = 10),
          legend.position = "none",
          plot.title = element_text(size = 14, face = "bold"))+
+       facet_grid(~ exp, scales = "free_x") +
   scale_fill_manual(values = c("gray", "red"))+
-  labs(y = "Probability", x ="Rightward                                                            Leftward")
+  labs(y = "Probability", x ="  Rightward              Leftward")
 
 ```
 
@@ -563,15 +567,33 @@ wide_data$congruencyEffect_IE = (wide_data$Incongruent - wide_data$Congruent)/(w
 
 wide_data$exp = factor(wide_data$exp,levels = c("Italian Adults", "Himba Adults 2021", "Himba Adults 2022", "Italian Preschoolers"))
 
+norm = wide_data %>%
+      group_by(exp,Task)  %>%
+      shapiro_test(congruencyEffect_IE)
 
-# T_test versus chance level for each population and Task Instructions
-stat.test <- wide_data %>% 
-  group_by( Task, exp) %>%
+knitr::kable(norm, caption = "Shapiro Test for normal distribution")
+
+# T_test versus chance level for each population and Task Instructions for normally distributed Data
+stat.test_par <- wide_data[!(wide_data$Task == "Decreasing" & wide_data$exp == "Italian Adults") & !(wide_data$Task == "Increasing" & wide_data$exp == "Italian Preschoolers"),] %>% 
+  group_by(Task, exp) %>%
   t_test(congruencyEffect_IE ~ 1, mu = 0) %>%
   add_significance() %>%
   add_xy_position(fun = "mean_se", x = "Task")
 
-knitr::kable(stat.test, caption = "T-test versus chance level")
+stat.test_par$Stat_test = "T-test"
+
+# Wilcoxon Test versus chance level for each population and Task Instructions  for non normally distributed Data
+stat.test_nonpar <- wide_data[(wide_data$Task == "Decreasing" & wide_data$exp == "Italian Adults") | (wide_data$Task == "Increasing" & wide_data$exp == "Italian Preschoolers"),] %>% 
+  group_by(Task, exp) %>%
+  wilcox_test(congruencyEffect_IE ~ 1, mu = 0) %>%
+  add_significance() %>%
+  add_xy_position(fun = "mean_se", x = "Task")
+
+stat.test_nonpar$Stat_test = "Wilcoxon Test"
+
+
+stat.test = rbind(stat.test_par[,!(names(stat.test_par) %in% "df")], stat.test_nonpar)
+knitr::kable(stat.test, caption = "Test versus chance level")
 
 
 # Plot Congruency Effect 
