@@ -1,6 +1,6 @@
 # Information about all analysis
 
-Please note that the results presented in this paper are just a substract of all the experiments that were performed. Indeed, it took some time to design experiments that would work with different types of populations and that would reflect implicit measures. The very detailed information of what experiments have been performed and the results for each group is available in the folder `All_Analyses`. Here is a quick summary of which experiments have been performed with which groups:
+Please be aware that the results mentioned in this paper represent only a part of the experiments conducted. It took considerable time to create experiments suitable for various populations and to capture implicit measures. For comprehensive information on the experiments conducted and the results for each group, please refer to the folder named All_Analyses. Here is a brief overview of the experiments performed with each group:
 
 | Population | *OrderingCards* | CountingStones | GazeTracking | *Numerosity (VT)* | Squares | Valence | Luminance | Baskets | Numberline |
 | --- | --- | --- | --- |--- | --- | --- | --- | --- | --- |
@@ -8,6 +8,16 @@ Please note that the results presented in this paper are just a substract of all
 | Himbas 2022 | v |  | v | v | v | v | v |  |  |
 | Italian Preschoolers | v |  | v | v |   | v |  | v |  |
 | Italian Adults |  v |  |  | v |   | v | v | v |  |
+
+The following are the reasons why some experiments are not included in the final analysis:
+
+ - Some experiments had unreliable results due to various factors. For instance, gaze tracking with Himba participants outdoors, under bright lighting conditions, did not provide sufficiently high-quality data to determine the direction of gaze accurately.
+ - In certain experiments, there was not enough variation among the participants. For example, nearly all Himba participants were highly successful at counting stones.
+ - Certain experiments were still in the developmental or experimental stages, such as the Valence or Luminance experiments. We hope to refine the design of these experiments in the future to make them suitable for further studies. Additionally, these experiments were not conducted with all populations.
+ - The "Baskets" experiment, which we initially believed would indicate an implicit number line, actually turned out to reflect an explicit number line. Therefore, we have chosen to present only the results from the cards ordering experiment.
+ - In the "Cards ordering" experiment, participants were asked to order both cards with Arabic numbers and dotted cards. However, we noticed that asking them to order cards with digits influenced their tendency to order the dotted cards in a linear manner. As a result, the results for ordering dotted cards linearly were no longer useful for analysis.
+
+Only the "OrderingCards" and "Numerosity" experiments were conducted with all groups. Therefore, we have decided to include only the results from these experiments for publication, as they serve as good indicators of both explicit and implicit measures. We are willing to make the presentation of results as easy as possible, but also to make science as open as possible. Please feel free to let us know if you would like access to other files not provided here.
 
 # Information about the data
 
