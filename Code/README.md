@@ -1,13 +1,13 @@
 # Information about all analysis
 
-Please be aware that the results mentioned in this paper represent only a part of the experiments conducted. It took considerable time to create experiments suitable for various populations and to capture implicit measures. For comprehensive information on the experiments conducted and the results for each group, please refer to the folder named All_Analyses. Here is a brief overview of the experiments performed with each group:
+Please be aware that the results mentioned in this paper represent only **a part of the experiments conducted**. It took considerable time to create experiments suitable for various populations and to capture implicit measures. For comprehensive information on the experiments conducted and the results for each group, please refer to the folder named `All_Analyses`. Here is a brief overview of the experiments performed with each group:
 
 | Population | *OrderingCards* | CountingStones | GazeTracking | *Numerosity (VT)* | Squares | Valence | Luminance | Baskets | Numberline |
 | --- | --- | --- | --- |--- | --- | --- | --- | --- | --- |
-| Himbas 2021 | v | v | v | v |  |  |  | v | v |
-| Himbas 2022 | v |  | v | v | v | v | v |  |  |
-| Italian Preschoolers | v |  | v | v |   | v |  | v |  |
-| Italian Adults |  v |  |  | v |   | v | v | v |  |
+| Himb2021 | v | v | v | v |  |  |  | v | v |
+| Himb2022 | v |  | v | v | v | v | v |  |  |
+| Preschool | v |  | v | v |   | v |  | v |  |
+| ItalAdult |  v |  |  | v |   | v | v | v |  |
 
 The following are the reasons why some experiments are not included in the final analysis:
 
