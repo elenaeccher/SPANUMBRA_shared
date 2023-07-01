@@ -1,5 +1,5 @@
 # SPANUMBRA_shared
-This repository contains all the data and code needed to reproduce the plots and analyses reported in the paper *A universal left-to-right bias in number-space mapping across ages and cultures* by Elena Eccher, Mathilde Josserand, Serge Caparos, Esther Boissin, Marco Buiatti, Manuela Piazza, Giorgio Vallortigara
+This repository contains all the data and code needed to reproduce the plots and analyses reported in the paper *A universal left-to-right bias in number-space mapping across ages and cultures* by Elena Eccher, Mathilde Josserand, Serge Caparos, Esther Boissin, Marco Buiatti, Manuela Piazza, and Giorgio Vallortigara.
 
 You can find the list of references, in bibtex format, in the file `Reference_list.bib`.
 
