@@ -2,9 +2,12 @@
 
 Please note that the results presented in this paper are just a substract of all the experiments that were performed. Indeed, it took some time to design experiments that would work with different types of populations and that would reflect implicit measures. The very detailed information of what experiments have been performed and the results for each group is available in the folder `All_Analyses`. Here is a quick summary of which experiments have been performed with which groups:
 
-| hey | hey |
-| --- | --- |
-| yo | hi |
+| Population | *OrderingCards* | CountingStones | GazeTracking | *Numerosity (VT)* | Squares | Valence | Luminance | Baskets | Numberline |
+| --- | --- | --- | --- |--- | --- | --- | --- | --- | --- |
+| Himbas 2021 | v | v | v | v |  |  |  | v | v |
+| Himbas 2022 | v |  | v | v | v | v | v |  |  |
+| Italian Preschoolers | v |  | v | v |   | v |  | v |  |
+| Italian Adults |  v |  |  | v |   | v | v | v |  |
 
 # Information about the data
 
