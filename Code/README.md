@@ -1,3 +1,8 @@
+
+Analysis were obtained using R (write here R version - it is written at first when you open R in your console). Results were printed in an html file (`Analysis_Code.hmtl`).   
+
+The list of packages needed to run the code, also in bibtex format, in the file `Reference_list.bib`.
+
 # Information about all analysis
 
 Please be aware that the results mentioned in this paper represent only **a part of the experiments conducted**. It took considerable time to create experiments suitable for various populations and to capture implicit measures. For comprehensive information on the experiments conducted and the results for each group, please refer to the folder named `All_Analyses`. Here is a brief overview of the experiments performed with each group:
@@ -16,6 +21,7 @@ The following are the reasons why some experiments are not included in the final
  - Certain experiments were still in the developmental or experimental stages, such as the Valence or Luminance experiments. We hope to refine the design of these experiments in the future to make them suitable for further studies. Additionally, these experiments were not conducted with all populations.
  - The "Baskets" experiment, which we initially believed would indicate an implicit number line, actually turned out to reflect an explicit number line. Therefore, we have chosen to present only the results from the cards ordering experiment.
  - In the "Cards ordering" experiment, participants were asked to order both cards with Arabic numbers and dotted cards. However, we noticed that asking them to order cards with digits influenced their tendency to order the dotted cards in a linear manner. As a result, the results for ordering dotted cards linearly were no longer useful for analysis.
+ - Numberline experiment was a replication of Dehaene et al (2008) paper and was not specifically related to this hypothesis.
 
 Only the "OrderingCards" and "Numerosity" experiments were conducted with all groups. Therefore, we have decided to include only the results from these experiments for publication, as they serve as good indicators of both explicit and implicit measures. We are willing to make the presentation of results as easy as possible, but also to make science as open as possible. Please feel free to let us know if you would like access to other files not provided here.
 
@@ -28,14 +34,14 @@ Data folder contains the results for all group. These results are then further u
  - file `Ordering_Cards_Task` shows the number (column total_count) and percentage (column Percent) of participants to order cards according to a range of different shapes for all groups
  - file `Numerosity_Comparison_Task` shows the mean score for each participants for each condition (Increasing-Congruent, Increasing-Incongruent, Decreasing-Congruent, Decreasing-Incongruent). Mean scores include mean time, mean error, and mean inverse efficiency ("invefi")
 
-Raw data (including result file for each participant) are not presented in this folder to make it simpler to read and access, but feel free to ask elena.eccher-1@unitn.it for more information it (also, pictures of the disposition of cards are available for the experiment with Himbas).
+**Raw data (result files for each participant) are not presented in this folder** to make it simpler to read and access, but feel free to ask elena.eccher-1@unitn.it for more information it (also, pictures of the disposition of cards are available for the experiment with Himbas).
 
 Note that we would be happy to share to code used for generating the experiment if you are interested in replicating or pushing forward the results.
 
-# Information about the code                                                                                                                                                                                                                                                                                                                      
-Analysis were obtained using R (write here R version - it is written at first when you open R in your console). Results were printed in an html file (`Analysis_Code.hmtl`).   
+# Information about the code for generated the "Numerosity" experiment
 
-The list of packages needed to run the code, also in bibtex format, in the file `Reference_list.bib`.
+In order to favour replication, we provide here the code for the "Numerosity" experiment. Please note that the "OrderingCards" experiment is not computerized, so we do not have any code to share. Refer to Method in Supplementary Materials for more information about how the code was generated.
+
 
 # Information about the Figures
 
