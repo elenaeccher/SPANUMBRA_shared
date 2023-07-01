@@ -12,4 +12,10 @@ Raw data (including result file for each participant) are not presented in this 
 Note that we would be happy to share to code used for generating the experiment if you are interested in replicating or pushing forward the results.
 
 # Information about the code                                                                                                                                                                                                                                                                                                                      
-Analysis were obtained using R (write here R version - it is written at first when you open R in your console). Results were printed in an html file (`Analysis_Code.hmtl`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+Analysis were obtained using R (write here R version - it is written at first when you open R in your console). Results were printed in an html file (`Analysis_Code.hmtl`).   
+
+The list of packages needed to run the code, also in bibtex format, in the file `Reference_list.bib`.
+
+# Information about the Figures
+
+Figures are automatically generated from the RMarkdown code, and are available in the Figures folder. Please note that for replication, an empty folder called "Figures" needs to be created.
