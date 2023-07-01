@@ -1,9 +1,17 @@
+# Information about all analysis
+
+Please note that the results presented in this paper are just a substract of all the experiments that were performed. Indeed, it took some time to design experiments that would work with different types of populations and that would reflect implicit measures. The very detailed information of what experiments have been performed and the results for each group is available in the folder `All_Analyses`. Here is a quick summary of which experiments have been performed with which groups:
+
+| hey | hey |
+| --- | --- |
+| yo | hi |
+
 # Information about the data
 
 Data folder contains the results for all group. These results are then further used to generate the final analysis.
 
  - file `Correlation_Score_Cards_Task` shows the results for each participant all groups (Himba Adults 2021, Himba Adults 2022, Italian Adults, Italian Preschoolers) for the task where participants have to order dotted rounded cards (with between 1 and 10 dots) the way they want.
- - Also, please note that this file is already preprocessed: correlations in the "cor" columns were obtained by computing **Kendall’s Tau**, yielding a score between -1 and 1. The code used to generated this is available in the `Code` folder and is called `Generate_chanceDistribution.R`. It creates a Rdata file available in this folder name `Permutation_Distr.Rdata`.
+ - Also, please note that this file is already preprocessed: correlations in the "cor" columns were obtained by computing **Kendall’s Tau**, yielding a score between -1 and 1. The code used to generated this score is available in `Generate_chanceDistribution.R`: it creates a Rdata file available in this folder name `Permutation_Distr.Rdata`.
  - file `Ordering_Cards_Task` shows the number (column total_count) and percentage (column Percent) of participants to order cards according to a range of different shapes for all groups
  - file `Numerosity_Comparison_Task` shows the mean score for each participants for each condition (Increasing-Congruent, Increasing-Incongruent, Decreasing-Congruent, Decreasing-Incongruent). Mean scores include mean time, mean error, and mean inverse efficiency ("invefi")
 
