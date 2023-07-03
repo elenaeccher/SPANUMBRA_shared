@@ -1,5 +1,5 @@
 
-Analysis were obtained using R (write here R version - it is written at first when you open R in your console). Results were printed in an html file (`Analysis_Code.hmtl`).   
+Analysis were obtained using R (4.1.3 (2022-03-10)). Results were printed in an html file (`Analysis_Code.hmtl`).   
 
 The list of packages needed to run the code, also in bibtex format, in the file `Reference_list.bib`.
 
